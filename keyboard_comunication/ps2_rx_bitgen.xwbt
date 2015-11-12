@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\BNDI TEST\keyboard_comunication\ps2_rx.ncd
+OUTFILE=E:\BNDI TEST\keyboard_comunication\ps2_rx.bit
+FAMILY=Spartan3
+PART=xc3s200-5ft256
+WORKINGDIR=E:\BNDI TEST\keyboard_comunication
+LICENSE=WebPack
+USER_INFO=176422144_0_0_514

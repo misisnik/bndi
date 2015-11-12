@@ -1,0 +1,29 @@
+Command line:
+   fallingEdgeDetector_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52203
+
+Mon Oct 26 17:17:49 2015
+
+
+ Elaboration Time: 0.078001 sec
+
+ Current Memory Usage: 1314.26 Meg
+
+ Total Signals          : 6
+ Total Nets             : 6
+ Total Signal Drivers   : 4
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 3
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 366
+Total Line Count : 5
+
+ Total Simulation Time: 0.078001 sec
+
+ Current Memory Usage: 1314.26 Meg
+
+Mon Oct 26 17:17:55 2015
+

@@ -1,0 +1,76 @@
+xst -intstyle ise -ifn "C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/ps2_rx.xst" -ofn "C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/ps2_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps2_rx.ucf -p xc3s200-ft256-5 ps2_rx.ngc ps2_rx.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o ps2_rx_map.ncd ps2_rx.ngd ps2_rx.pcf 
+par -w -intstyle ise -ol high -t 1 ps2_rx_map.ncd ps2_rx.ncd ps2_rx.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps2_rx.twx ps2_rx.ncd -o ps2_rx.twr ps2_rx.pcf -ucf ps2_rx.ucf 
+bitgen -intstyle ise -f ps2_rx.ut ps2_rx.ncd 
+xst -intstyle ise -ifn "C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/ps2_rx.xst" -ofn "C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/ps2_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps2_rx.ucf -p xc3s200-ft256-5 ps2_rx.ngc ps2_rx.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o ps2_rx_map.ncd ps2_rx.ngd ps2_rx.pcf 
+par -w -intstyle ise -ol high -t 1 ps2_rx_map.ncd ps2_rx.ncd ps2_rx.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps2_rx.twx ps2_rx.ncd -o ps2_rx.twr ps2_rx.pcf -ucf ps2_rx.ucf 
+bitgen -intstyle ise -f ps2_rx.ut ps2_rx.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.xst" -ofn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.xst" -ofn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps2_rx.ucf -p xc3s200-ft256-5 ps2_rx.ngc ps2_rx.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o ps2_rx_map.ncd ps2_rx.ngd ps2_rx.pcf 
+par -w -intstyle ise -ol high -t 1 ps2_rx_map.ncd ps2_rx.ncd ps2_rx.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps2_rx.twx ps2_rx.ncd -o ps2_rx.twr ps2_rx.pcf -ucf ps2_rx.ucf 
+xst -intstyle ise -ifn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.xst" -ofn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps2_rx.ucf -p xc3s200-ft256-5 ps2_rx.ngc ps2_rx.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o ps2_rx_map.ncd ps2_rx.ngd ps2_rx.pcf 
+par -w -intstyle ise -ol high -t 1 ps2_rx_map.ncd ps2_rx.ncd ps2_rx.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps2_rx.twx ps2_rx.ncd -o ps2_rx.twr ps2_rx.pcf -ucf ps2_rx.ucf 
+xst -intstyle ise -ifn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.xst" -ofn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.xst" -ofn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.xst" -ofn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps2_rx.ucf -p xc3s200-ft256-5 ps2_rx.ngc ps2_rx.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o ps2_rx_map.ncd ps2_rx.ngd ps2_rx.pcf 
+par -w -intstyle ise -ol high -t 1 ps2_rx_map.ncd ps2_rx.ncd ps2_rx.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps2_rx.twx ps2_rx.ncd -o ps2_rx.twr ps2_rx.pcf -ucf ps2_rx.ucf 
+xst -intstyle ise -ifn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.xst" -ofn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps2_rx.ucf -p xc3s200-ft256-5 ps2_rx.ngc ps2_rx.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o ps2_rx_map.ncd ps2_rx.ngd ps2_rx.pcf 
+par -w -intstyle ise -ol high -t 1 ps2_rx_map.ncd ps2_rx.ncd ps2_rx.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps2_rx.twx ps2_rx.ncd -o ps2_rx.twr ps2_rx.pcf -ucf ps2_rx.ucf 
+xst -intstyle ise -ifn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.xst" -ofn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps2_rx.ucf -p xc3s200-ft256-5 ps2_rx.ngc ps2_rx.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o ps2_rx_map.ncd ps2_rx.ngd ps2_rx.pcf 
+par -w -intstyle ise -ol high -t 1 ps2_rx_map.ncd ps2_rx.ncd ps2_rx.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps2_rx.twx ps2_rx.ncd -o ps2_rx.twr ps2_rx.pcf -ucf ps2_rx.ucf 
+xst -intstyle ise -ifn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.xst" -ofn "C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps2_rx.ucf -p xc3s200-ft256-5 ps2_rx.ngc ps2_rx.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o ps2_rx_map.ncd ps2_rx.ngd ps2_rx.pcf 
+par -w -intstyle ise -ol high -t 1 ps2_rx_map.ncd ps2_rx.ncd ps2_rx.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps2_rx.twx ps2_rx.ncd -o ps2_rx.twr ps2_rx.pcf -ucf ps2_rx.ucf 
+bitgen -intstyle ise -f ps2_rx.ut ps2_rx.ncd 
+xst -intstyle ise -ifn "E:/BNDI TEST/keyboard_comunication/ps2_rx.xst" -ofn "E:/BNDI TEST/keyboard_comunication/ps2_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps2_rx.ucf -p xc3s200-ft256-5 "ps2_rx.ngc" ps2_rx.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o ps2_rx_map.ncd ps2_rx.ngd ps2_rx.pcf 
+par -w -intstyle ise -ol high -t 1 ps2_rx_map.ncd ps2_rx.ncd ps2_rx.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps2_rx.twx ps2_rx.ncd -o ps2_rx.twr ps2_rx.pcf -ucf ps2_rx.ucf 
+bitgen -intstyle ise -f ps2_rx.ut ps2_rx.ncd 
+xst -intstyle ise -ifn "E:/BNDI TEST/keyboard_comunication/ps2_rx.xst" -ofn "E:/BNDI TEST/keyboard_comunication/ps2_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps2_rx.ucf -p xc3s200-ft256-5 "ps2_rx.ngc" ps2_rx.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o ps2_rx_map.ncd ps2_rx.ngd ps2_rx.pcf 
+par -w -intstyle ise -ol high -t 1 ps2_rx_map.ncd ps2_rx.ncd ps2_rx.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps2_rx.twx ps2_rx.ncd -o ps2_rx.twr ps2_rx.pcf -ucf ps2_rx.ucf 
+bitgen -intstyle ise -f ps2_rx.ut ps2_rx.ncd 
+xst -intstyle ise -ifn "E:/BNDI TEST/keyboard_comunication/ps2_rx.xst" -ofn "E:/BNDI TEST/keyboard_comunication/ps2_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps2_rx.ucf -p xc3s200-ft256-5 "ps2_rx.ngc" ps2_rx.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o ps2_rx_map.ncd ps2_rx.ngd ps2_rx.pcf 
+par -w -intstyle ise -ol high -t 1 ps2_rx_map.ncd ps2_rx.ncd ps2_rx.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps2_rx.twx ps2_rx.ncd -o ps2_rx.twr ps2_rx.pcf -ucf ps2_rx.ucf 
+bitgen -intstyle ise -f ps2_rx.ut ps2_rx.ncd 
+xst -intstyle ise -ifn "E:/BNDI TEST/keyboard_comunication/ps2_rx.xst" -ofn "E:/BNDI TEST/keyboard_comunication/ps2_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps2_rx.ucf -p xc3s200-ft256-5 "ps2_rx.ngc" ps2_rx.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o ps2_rx_map.ncd ps2_rx.ngd ps2_rx.pcf 
+par -w -intstyle ise -ol high -t 1 ps2_rx_map.ncd ps2_rx.ncd ps2_rx.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps2_rx.twx ps2_rx.ncd -o ps2_rx.twr ps2_rx.pcf -ucf ps2_rx.ucf 
+bitgen -intstyle ise -f ps2_rx.ut ps2_rx.ncd 
+xst -intstyle ise -ifn "E:/BNDI TEST/keyboard_comunication/ps2_rx.xst" -ofn "E:/BNDI TEST/keyboard_comunication/ps2_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ps2_rx.ucf -p xc3s200-ft256-5 "ps2_rx.ngc" ps2_rx.ngd  
+map -intstyle ise -p xc3s200-ft256-5 -cm area -ir off -pr off -c 100 -o ps2_rx_map.ncd ps2_rx.ngd ps2_rx.pcf 
+par -w -intstyle ise -ol high -t 1 ps2_rx_map.ncd ps2_rx.ncd ps2_rx.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml ps2_rx.twx ps2_rx.ncd -o ps2_rx.twr ps2_rx.pcf -ucf ps2_rx.ucf 
+bitgen -intstyle ise -f ps2_rx.ut ps2_rx.ncd 

@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Mon Oct 26 17:03:34 2015
+# Process ID: 704
+# Log file: C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin K12 [get_ports {ps_out[0]}]
+endgroup
+startgroup
+set_property package_pin P14 [get_ports {ps_out[1]}]
+endgroup
+startgroup
+set_property package_pin L12 [get_ports {ps_out[2]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {ps_out[3]}]
+endgroup
+startgroup
+set_property package_pin P13 [get_ports {ps_out[4]}]
+endgroup
+startgroup
+set_property package_pin N12 [get_ports {ps_out[5]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {ps_out[6]}]
+endgroup
+startgroup
+set_property package_pin P11 [get_ports {ps_out[7]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin M16 [get_ports ps2_c]
+endgroup
+startgroup
+set_property package_pin M15 [get_ports ps2_d]
+endgroup
+save_constraints

@@ -1,0 +1,27 @@
+V3 17
+FL C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/debouncer.vhd 2015/10/26.15:24:28 P.68d
+FL C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/fallingEdgeDetector.vhd 2015/10/26.15:33:37 P.68d
+FL C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/ps2_rx.vhd 2015/10/26.17:10:24 P.68d
+FL C:/Xilinx/bndi-master/keyboard_comunication/debouncer.vhd 2015/11/02.15:49:41 P.68d
+FL C:/Xilinx/bndi-master/keyboard_comunication/fallingEdgeDetector.vhd 2015/10/26.15:33:38 P.68d
+FL C:/Xilinx/bndi-master/keyboard_comunication/ps2_rx.vhd 2015/11/02.16:12:18 P.68d
+FL "E:/BNDI TEST/keyboard_comunication/debouncer.vhd" 2015/11/02.16:26:34 P.68d
+EN work/debouncer 1446477997 \
+      FL "E:/BNDI TEST/keyboard_comunication/debouncer.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/debouncer/Behavioral 1446477998 \
+      FL "E:/BNDI TEST/keyboard_comunication/debouncer.vhd" EN work/debouncer 1446477997
+FL "E:/BNDI TEST/keyboard_comunication/fallingEdgeDetector.vhd" 2015/10/26.15:33:38 P.68d
+EN work/fallingEdgeDetector 1446477999 \
+      FL "E:/BNDI TEST/keyboard_comunication/fallingEdgeDetector.vhd" \
+      PB ieee/std_logic_1164 1370735607
+AR work/fallingEdgeDetector/Behavioral 1446478000 \
+      FL "E:/BNDI TEST/keyboard_comunication/fallingEdgeDetector.vhd" \
+      EN work/fallingEdgeDetector 1446477999
+FL "E:/BNDI TEST/keyboard_comunication/ps2_rx.vhd" 2015/11/02.16:12:20 P.68d
+EN work/ps2_rx 1446478001 FL "E:/BNDI TEST/keyboard_comunication/ps2_rx.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/ps2_rx/Behavioral 1446478002 \
+      FL "E:/BNDI TEST/keyboard_comunication/ps2_rx.vhd" EN work/ps2_rx 1446478001 \
+      CP debouncer CP fallingEdgeDetector

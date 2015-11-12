@@ -1,0 +1,22 @@
+V3 11
+FL "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/rom_1.vhd" 2015/11/12.20:30:34 P.68d
+EN work/rom_1 1447359391 \
+      FL "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/rom_1.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+AR work/rom_1/Behavioral 1447359392 \
+      FL "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/rom_1.vhd" \
+      EN work/rom_1 1447359391
+FL "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/top.vhd" 2015/11/12.21:16:26 P.68d
+EN work/top 1447359393 \
+      FL "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/top.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+AR work/top/Behavioral 1447359394 \
+      FL "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/top.vhd" EN work/top 1447359393 \
+      CP vga_sync CP rom_1
+FL "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/vga_sync.vhd" 2015/11/12.20:16:28 P.68d
+EN work/vga_sync 1447359389 \
+      FL "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/vga_sync.vhd" \
+      PB ieee/std_logic_1164 1370735607 PB ieee/NUMERIC_STD 1370735611
+AR work/vga_sync/Behavioral 1447359390 \
+      FL "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/vga_sync.vhd" \
+      EN work/vga_sync 1447359389

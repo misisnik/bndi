@@ -1,0 +1,6 @@
+EN ps2_rx NULL "E:/BNDI TEST/keyboard_comunication/ps2_rx.vhd" sub00/vhpl04 1446478001
+AR debouncer behavioral "E:/BNDI TEST/keyboard_comunication/debouncer.vhd" sub00/vhpl01 1446477998
+AR fallingedgedetector behavioral "E:/BNDI TEST/keyboard_comunication/fallingEdgeDetector.vhd" sub00/vhpl03 1446478000
+AR ps2_rx behavioral "E:/BNDI TEST/keyboard_comunication/ps2_rx.vhd" sub00/vhpl05 1446478002
+EN fallingedgedetector NULL "E:/BNDI TEST/keyboard_comunication/fallingEdgeDetector.vhd" sub00/vhpl02 1446477999
+EN debouncer NULL "E:/BNDI TEST/keyboard_comunication/debouncer.vhd" sub00/vhpl00 1446477997

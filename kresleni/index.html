@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Michal Sladecek" />
+		<meta name="robots" content="index, follow" />
+		<meta name="googlebot" content="index,follow,snippet,archive" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/kresleni.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				window.__init__();
+			});
+		</script>
+		<style>
+			.bod{
+				width:10px;
+				height:10px;
+			}
+			.line{
+
+			}
+			.real_bod{
+				width:2px;
+				height:2px;
+			}
+			.real_line{
+			}
+			.actual-color{
+				width:100%;
+				height:50px;
+				border:2px solid black;
+				position:fixed;
+				right:0;
+				bottom:0;
+			}
+		</style>
+	</body>
+
+	<form name="size">
+		<input type="text" id="width" value="10" name="width">
+		<input type="text" id="height" value="10" name="height">
+		<input type="button" id="size_submit" name="size_submit" value="Generovat">
+	</form>
+
+	<div class="paletka">
+		<button class="btn btn-default pallete"
+				style="background-color:black;"
+				data-color-code="000"
+				data-color="black">Black
+		</button>
+		<button class="btn btn-default pallete"
+				style="background-color:blue;"
+				data-color-code="001"
+				data-color="blue">Blue
+		</button>
+		<button class="btn btn-default pallete"
+				style="background-color:green;"
+				data-color-code="010"
+				data-color="green">green
+		</button>
+		<button class="btn btn-default pallete"
+				style="background-color:cyan;"
+				data-color-code="011"
+				data-color="cyan">cyan
+		</button>
+		<button class="btn btn-default pallete"
+				style="background-color:red;"
+				data-color-code="100"
+				data-color="red">red
+		</button>
+		<button class="btn btn-default pallete"
+				style="background-color:magenta;"
+				data-color-code="101"
+				data-color="magenta">magenta
+		</button>
+		<button class="btn btn-default pallete"
+				style="background-color:yellow;"
+				data-color-code="110"
+				data-color="yellow">yellow
+		</button>
+		<button class="btn btn-default pallete"
+				style="background-color:white;"
+				data-color-code="111"
+				data-color="white">white
+		</button>
+
+		<input type="checkbox" id="is_background" value="1"> Prave kreslim pozadi
+
+		<button class="btn btn-danger" id="mirror">Zrcadlit</button>
+		<button class="btn btn-danger" id="rotate">Prevratit</button>
+	</div>
+	<div class="actual-color">
+		<button class="btn btn-success" id="fill">Vyplnit aktualni barvou</button>
+	</div>
+	<hr>
+	<div class="pull-left" style="width:50%">
+		<table id="drawing-block" border="1">
+
+		</table>
+	</div>
+
+	<div class="pull-right" style="width:50%">
+		<table id="real-image">
+		</table>
+	</div>
+		<br><br>
+	<div class="pull-left panel panel-primary" style="width:100%;postion:relative;margin-top:50px;">
+		<div class="panel-heading">
+			<h3 class="panel-title">Vygenerovat aktualni kod <button id="get-code" class="btn btn-warning">Get code</button> nebo nacist binarni data <button id="get-picture" class="btn btn-warning">Get picture</button></h3>
+		</div>
+		<textarea class="panel-body" style="width:100%;height:250px;" id="code">
+
+		</textarea>
+		</div>
+	</div>
+	<div class="pull-left" style="height:50px; width:100%;"></div>
+</head>

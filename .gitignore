@@ -1,0 +1,7 @@
+gnore everything
+*.exe
+*.prj
+/isim/*
+
+# ...even if they are in subdirectories
+!*/

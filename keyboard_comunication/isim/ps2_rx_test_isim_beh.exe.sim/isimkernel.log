@@ -1,0 +1,10 @@
+Command line:
+   ps2_rx_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52253
+
+Mon Oct 26 17:19:41 2015
+
+
+ Elaboration Time: 0.046801 sec

@@ -1,0 +1,6 @@
+EN vga_sync NULL "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/vga_sync.vhd" sub00/vhpl00 1447359389
+AR rom_1 behavioral "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/rom_1.vhd" sub00/vhpl03 1447359392
+AR vga_sync behavioral "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/vga_sync.vhd" sub00/vhpl01 1447359390
+EN top NULL "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/top.vhd" sub00/vhpl04 1447359393
+EN rom_1 NULL "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/rom_1.vhd" sub00/vhpl02 1447359391
+AR top behavioral "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/top.vhd" sub00/vhpl05 1447359394

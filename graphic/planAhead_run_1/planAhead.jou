@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Thu Nov 12 21:13:06 2015
+# Process ID: 14572
+# Log file: C:/Users/Morrisiak/Desktop/Swing Copters/graphic/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Morrisiak/Desktop/Swing Copters/graphic/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/Morrisiak/Desktop/Swing Copters/graphic/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin R12 [get_ports {rgb[2]}]
+endgroup
+startgroup
+set_property package_pin T12 [get_ports {rgb[1]}]
+endgroup
+startgroup
+set_property package_pin R11 [get_ports {rgb[0]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin R9 [get_ports hsync]
+endgroup
+startgroup
+set_property package_pin T10 [get_ports vsync]
+endgroup
+save_constraints

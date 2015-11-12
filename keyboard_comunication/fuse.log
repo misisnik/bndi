@@ -1,0 +1,26 @@
+Running: C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/ps2_rx_test_isim_beh.exe -prj C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/ps2_rx_test_beh.prj work.ps2_rx_test 
+ISim P.68d (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/fallingEdgeDetector.vhd" into library work
+Parsing VHDL file "C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/debouncer.vhd" into library work
+Parsing VHDL file "C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/ps2_rx.vhd" into library work
+Parsing VHDL file "C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/ps2_rx_test.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity debouncer [debouncer_default]
+Compiling architecture behavioral of entity fallingEdgeDetector [fallingedgedetector_default]
+Compiling architecture behavioral of entity ps2_rx [ps2_rx_default]
+Compiling architecture behavior of entity ps2_rx_test
+Time Resolution for simulation is 1ps.
+Waiting for 5 sub-compilation(s) to finish...
+Compiled 12 VHDL Units
+Built simulation executable C:/Users/xslade18/Desktop/bndi-master/keyboard_comunication/ps2_rx_test_isim_beh.exe
+Fuse Memory Usage: 35892 KB
+Fuse CPU Usage: 607 ms
