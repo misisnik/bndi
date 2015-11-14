@@ -1,4 +1,4 @@
-# BNDI semestral project FPGA Spartan 3 game
+# VUT BRNO - BNDI semestral project FPGA Spartan 3 game
 GAME Swing Copters
 
 Owners:
