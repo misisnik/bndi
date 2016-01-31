@@ -1,0 +1,20 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -o "C:/Users/Michal/Desktop/Swing Copters/graphic/testvga_isim_beh.exe" -prj "C:/Users/Michal/Desktop/Swing Copters/graphic/testvga_beh.prj" "work.testvga" 
+ISim P.68d (signature 0x7708f090)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Michal/Desktop/Swing Copters/graphic/vga_sync.vhd" into library work
+Parsing VHDL file "C:/Users/Michal/Desktop/Swing Copters/graphic/testvga.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity vga_sync [vga_sync_default]
+Compiling architecture behavior of entity testvga
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Built simulation executable C:/Users/Michal/Desktop/Swing Copters/graphic/testvga_isim_beh.exe
+Fuse Memory Usage: 34932 KB
+Fuse CPU Usage: 655 ms

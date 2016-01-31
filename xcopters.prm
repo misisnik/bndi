@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.68d
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o "C:\Users\Morrisiak\Desktop\Swing Copters//xcopters.mcs" -x xcf01s -u 00000000 "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/top.bit" 
+
+PROM C:\Users\Morrisiak\Desktop\Swing Copters\xcopters.prm map: Thu Jan 28 23:07:42 2016
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          128K
+PROM start    0000:0000
+PROM end      0001:ffff
+PROM checksum 0068443c
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0001:ff87     Jan 28 21:33:01 2016 C:/Users/Morrisiak/Desktop/Swing Copters/graphic/top.bit

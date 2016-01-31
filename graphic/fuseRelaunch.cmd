@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/Michal/Desktop/Swing Copters/graphic/testvga_isim_beh.exe" -prj "C:/Users/Michal/Desktop/Swing Copters/graphic/testvga_beh.prj" "work.testvga" 

@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Michal/Desktop/Swing Copters/graphic/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Michal/Desktop/Swing Copters/graphic/xst"
+elaborate
+-ifn rom_4.prj
+-ifmt mixed

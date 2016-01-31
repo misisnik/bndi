@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.68d
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.68d
+DATE            01/28/2016 - 23:07
+SOURCE          C:\Users\Morrisiak\Desktop\Swing Copters\xcopters.mcs
+DEVICE          XCF01S
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x0068443C
+START_ADDRESS   0x00000000 END_ADDRESS 0x0001FF87 DIRECTION_UP   "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/top.bit" 3s200ft256

@@ -21,8 +21,6 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.ALL;
 
---use ieee.std_logic_unsigned.all;
-
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -45,7 +43,7 @@ architecture Behavioral of vga_sync is
 	--dividers for clock
    signal divider_reg, divider, pixel_clk: std_logic;
 	--counter for pixels
-   signal x_counter_reg, x_counter, y_counter_reg, y_counter: unsigned(9 downto 0);
+   signal x_counter_reg, x_counter, y_counter_reg, y_counter: std_logic_vector(9 downto 0);
 	signal y_end, x_end: std_logic;
    -- synchronization
    signal v_sync, v_sync_reg, h_sync, h_sync_reg: std_logic;
@@ -81,10 +79,10 @@ begin
 
    -- setting status of pixel if is in border of monitor
    --horisontal is 800 -> 0 to 799
-   y_end <= '1' when x_counter_reg = 799 else 
+   y_end <= '1' when unsigned(x_counter_reg) = 799 else 
             '0';
    --vertical is 525 -> 0 to 524
-   x_end <= '1' when y_counter_reg = 524 else 
+   x_end <= '1' when unsigned(y_counter_reg) = 524 else 
             '0';
 
    --horisontal synchronization
@@ -94,7 +92,7 @@ begin
          if y_end='1' then
             x_counter <= (others=>'0');
          else
-            x_counter <= x_counter_reg + 1;
+            x_counter <= std_logic_vector(unsigned(x_counter_reg) + 1);
          end if;
       else
          x_counter <= x_counter_reg;
@@ -109,7 +107,7 @@ begin
          if (x_end='1') then
             y_counter <= (others=>'0');
          else
-            y_counter <= y_counter_reg + 1;
+            y_counter <= std_logic_vector(unsigned(y_counter_reg) + 1);
          end if;
       else
          y_counter <= y_counter_reg;
@@ -117,18 +115,18 @@ begin
    end process;
 	
 	--completed horisontal and vertical synchronization
-   h_sync <= '1' when (x_counter_reg >= 656) and (x_counter_reg <= 751) else
+   h_sync <= '1' when (unsigned(x_counter_reg) >= 656) and (unsigned(x_counter_reg) <= 751) else
 				 '0';
-   v_sync <= '1' when (y_counter_reg >= 490) and (y_counter_reg <= 491) else
+   v_sync <= '1' when (unsigned(y_counter_reg) >= 490) and (unsigned(y_counter_reg) <= 491) else
 				 '0';
 	--output sinchronization, just read from register
    hsync <= h_sync_reg;
    vsync <= v_sync_reg;
    -- video on/off
-   video_on <= '1' when (x_counter_reg < 640) and (y_counter_reg < 480) else
+   video_on <= '1' when (unsigned(x_counter_reg) < 640) and (unsigned(y_counter_reg) < 480) else
       '0';
    -- and finally push pixel x and y as std_logic_vector
-   pixel_x <= std_logic_vector(x_counter_reg);
-   pixel_y <= std_logic_vector(y_counter_reg);
+   pixel_x <= x_counter_reg;
+   pixel_y <= y_counter_reg;
 
 end Behavioral;

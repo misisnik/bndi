@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\Morrisiak\Desktop\Swing Copters\graphic\top.ncd
-OUTFILE=C:\Users\Morrisiak\Desktop\Swing Copters\graphic\top.bit
+INFILE=C:\Users\Sladecek\Desktop\Swing Copters\graphic\top.ncd
+OUTFILE=C:\Users\Sladecek\Desktop\Swing Copters\graphic\top.bit
 FAMILY=Spartan3
 PART=xc3s200-5ft256
-WORKINGDIR=C:\Users\Morrisiak\Desktop\Swing Copters\graphic
+WORKINGDIR=C:\Users\Sladecek\Desktop\Swing Copters\graphic
 LICENSE=WebPack
 USER_INFO=211009881_0_0_376

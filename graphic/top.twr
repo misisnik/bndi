@@ -2,7 +2,7 @@
 Release 14.6 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-E:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+C:\Xilinx\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
 -n 3 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf -ucf top.ucf
 
 Design file:              top.ncd
@@ -39,16 +39,31 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Setup/Hold to clock clk
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+but         |    3.329(R)|   -1.181(R)|clk_BUFGP         |   0.000|
+reset       |    8.198(R)|   -2.088(R)|clk_BUFGP         |   0.000|
+------------+------------+------------+------------------+--------+
+
 Clock clk to Pad
 ------------+------------+------------------+--------+
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-hsync       |    8.833(R)|clk_BUFGP         |   0.000|
-rgb<0>      |    9.316(R)|clk_BUFGP         |   0.000|
-rgb<1>      |    9.515(R)|clk_BUFGP         |   0.000|
-rgb<2>      |    9.357(R)|clk_BUFGP         |   0.000|
-vsync       |    9.315(R)|clk_BUFGP         |   0.000|
+game_uk<0>  |    9.938(R)|clk_BUFGP         |   0.000|
+game_uk<1>  |   11.046(R)|clk_BUFGP         |   0.000|
+hsync       |    7.981(R)|clk_BUFGP         |   0.000|
+ledka       |   11.153(R)|clk_BUFGP         |   0.000|
+ledka2      |   23.806(R)|clk_BUFGP         |   0.000|
+rgb<0>      |    8.749(R)|clk_BUFGP         |   0.000|
+rgb<1>      |    8.771(R)|clk_BUFGP         |   0.000|
+rgb<2>      |    8.679(R)|clk_BUFGP         |   0.000|
+skor<0>     |   10.410(R)|clk_BUFGP         |   0.000|
+skor<1>     |   10.048(R)|clk_BUFGP         |   0.000|
+vsync       |    9.169(R)|clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock clk
@@ -56,18 +71,18 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    8.859|         |         |         |
+clk            |   23.081|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Nov 12 21:16:57 2015 
+Analysis completed Sat Jan 30 13:46:12 2016 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 150 MB
+Peak Memory Usage: 188 MB
 
 
 

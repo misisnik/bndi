@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.21 secs
  
 --> Reading design: top.prj
 
@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 8
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -104,11 +104,29 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/vga_sync.vhd" in Library work.
+Compiling vhdl file "C:/Users/Sladecek/Desktop/Swing Copters/graphic/vga_sync.vhd" in Library work.
 Architecture behavioral of Entity vga_sync is up to date.
-Compiling vhdl file "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/rom_1.vhd" in Library work.
+Compiling vhdl file "C:/Users/Sladecek/Desktop/Swing Copters/divider_universal/divider.vhd" in Library work.
+Architecture behavioral of Entity universal_divider is up to date.
+Compiling vhdl file "C:/Users/Sladecek/Desktop/Swing Copters/counter_universal/universal_counter.vhd" in Library work.
+Architecture behvorial of Entity universal_counter is up to date.
+Compiling vhdl file "C:/Users/Sladecek/Desktop/Swing Copters/debouncer/debouncer.vhd" in Library work.
+Architecture behavioral of Entity debouncer is up to date.
+Compiling vhdl file "C:/Users/Sladecek/Desktop/Swing Copters/random/random.vhd" in Library work.
+Architecture behavioral of Entity random is up to date.
+Compiling vhdl file "C:/Users/Sladecek/Desktop/Swing Copters/bintobcd/BIN_TO_BCD_10BIT.vhd" in Library work.
+Architecture behavioral of Entity bin_to_bcd_12bit is up to date.
+Compiling vhdl file "C:/Users/Sladecek/Desktop/Swing Copters/graphic/rom_1.vhd" in Library work.
 Architecture behavioral of Entity rom_1 is up to date.
-Compiling vhdl file "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/top.vhd" in Library work.
+Compiling vhdl file "C:/Users/Sladecek/Desktop/Swing Copters/graphic/rom_2.vhd" in Library work.
+Entity <rom_2> compiled.
+Entity <rom_2> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sladecek/Desktop/Swing Copters/graphic/rom_3.vhd" in Library work.
+Entity <rom_3> compiled.
+Entity <rom_3> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/Sladecek/Desktop/Swing Copters/graphic/rom_4.vhd" in Library work.
+Architecture behavioral of Entity rom_4 is up to date.
+Compiling vhdl file "C:/Users/Sladecek/Desktop/Swing Copters/graphic/top.vhd" in Library work.
 Entity <top> compiled.
 Entity <top> (Architecture <behavioral>) compiled.
 
@@ -119,23 +137,144 @@ Analyzing hierarchy for entity <top> in library <work> (architecture <behavioral
 
 Analyzing hierarchy for entity <vga_sync> in library <work> (architecture <behavioral>).
 
+Analyzing hierarchy for entity <universal_divider> in library <work> (architecture <behavioral>) with generics.
+	DESIRED_FREQ = 10
+
+Analyzing hierarchy for entity <universal_divider> in library <work> (architecture <behavioral>) with generics.
+	DESIRED_FREQ = 15
+
+Analyzing hierarchy for entity <universal_divider> in library <work> (architecture <behavioral>) with generics.
+	DESIRED_FREQ = 4
+
+Analyzing hierarchy for entity <universal_divider> in library <work> (architecture <behavioral>) with generics.
+	DESIRED_FREQ = 80
+
+Analyzing hierarchy for entity <universal_divider> in library <work> (architecture <behavioral>) with generics.
+	DESIRED_FREQ = 90
+
+Analyzing hierarchy for entity <universal_divider> in library <work> (architecture <behavioral>) with generics.
+	DESIRED_FREQ = 160
+
+Analyzing hierarchy for entity <universal_divider> in library <work> (architecture <behavioral>) with generics.
+	DESIRED_FREQ = 200
+
+Analyzing hierarchy for entity <universal_divider> in library <work> (architecture <behavioral>) with generics.
+	DESIRED_FREQ = 5000
+
+Analyzing hierarchy for entity <universal_divider> in library <work> (architecture <behavioral>) with generics.
+	DESIRED_FREQ = 100
+
+Analyzing hierarchy for entity <universal_counter> in library <work> (architecture <behvorial>) with generics.
+	n = 2
+
+Analyzing hierarchy for entity <universal_counter> in library <work> (architecture <behvorial>) with generics.
+	n = 5
+
+Analyzing hierarchy for entity <universal_counter> in library <work> (architecture <behvorial>) with generics.
+	n = 4
+
+Analyzing hierarchy for entity <debouncer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <random> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <BIN_TO_BCD_12BIT> in library <work> (architecture <behavioral>).
+
 Analyzing hierarchy for entity <rom_1> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <rom_2> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <rom_3> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <rom_4> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <top> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/top.vhd" line 96: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <clk>
+WARNING:Xst:753 - "C:/Users/Sladecek/Desktop/Swing Copters/graphic/top.vhd" line 438: Unconnected output port 'BCD_Tisice' of component 'BIN_TO_BCD_12BIT'.
+INFO:Xst:2679 - Register <mracek_x_reg> in unit <top> has a constant value of 0100110000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <mrak_x_reg> in unit <top> has a constant value of 0010010001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <mrak2_x_reg> in unit <top> has a constant value of 0110011010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <mracek_2_x_reg> in unit <top> has a constant value of 0100110000 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <mrak_2_x_reg> in unit <top> has a constant value of 0010010001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <mrak2_2_x_reg> in unit <top> has a constant value of 0110011010 during circuit operation. The register is replaced by logic.
 Entity <top> analyzed. Unit <top> generated.
 
 Analyzing Entity <vga_sync> in library <work> (Architecture <behavioral>).
 Entity <vga_sync> analyzed. Unit <vga_sync> generated.
 
+Analyzing generic Entity <universal_divider.1> in library <work> (Architecture <behavioral>).
+	DESIRED_FREQ = 10
+Entity <universal_divider.1> analyzed. Unit <universal_divider.1> generated.
+
+Analyzing generic Entity <universal_divider.2> in library <work> (Architecture <behavioral>).
+	DESIRED_FREQ = 15
+Entity <universal_divider.2> analyzed. Unit <universal_divider.2> generated.
+
+Analyzing generic Entity <universal_divider.3> in library <work> (Architecture <behavioral>).
+	DESIRED_FREQ = 4
+Entity <universal_divider.3> analyzed. Unit <universal_divider.3> generated.
+
+Analyzing generic Entity <universal_divider.4> in library <work> (Architecture <behavioral>).
+	DESIRED_FREQ = 80
+Entity <universal_divider.4> analyzed. Unit <universal_divider.4> generated.
+
+Analyzing generic Entity <universal_divider.5> in library <work> (Architecture <behavioral>).
+	DESIRED_FREQ = 90
+Entity <universal_divider.5> analyzed. Unit <universal_divider.5> generated.
+
+Analyzing generic Entity <universal_divider.6> in library <work> (Architecture <behavioral>).
+	DESIRED_FREQ = 160
+Entity <universal_divider.6> analyzed. Unit <universal_divider.6> generated.
+
+Analyzing generic Entity <universal_divider.7> in library <work> (Architecture <behavioral>).
+	DESIRED_FREQ = 200
+Entity <universal_divider.7> analyzed. Unit <universal_divider.7> generated.
+
+Analyzing generic Entity <universal_divider.8> in library <work> (Architecture <behavioral>).
+	DESIRED_FREQ = 5000
+Entity <universal_divider.8> analyzed. Unit <universal_divider.8> generated.
+
+Analyzing generic Entity <universal_divider.9> in library <work> (Architecture <behavioral>).
+	DESIRED_FREQ = 100
+Entity <universal_divider.9> analyzed. Unit <universal_divider.9> generated.
+
+Analyzing generic Entity <universal_counter.1> in library <work> (Architecture <behvorial>).
+	n = 2
+Entity <universal_counter.1> analyzed. Unit <universal_counter.1> generated.
+
+Analyzing generic Entity <universal_counter.2> in library <work> (Architecture <behvorial>).
+	n = 5
+Entity <universal_counter.2> analyzed. Unit <universal_counter.2> generated.
+
+Analyzing generic Entity <universal_counter.3> in library <work> (Architecture <behvorial>).
+	n = 4
+Entity <universal_counter.3> analyzed. Unit <universal_counter.3> generated.
+
+Analyzing Entity <debouncer> in library <work> (Architecture <behavioral>).
+Entity <debouncer> analyzed. Unit <debouncer> generated.
+
+Analyzing Entity <random> in library <work> (Architecture <behavioral>).
+Entity <random> analyzed. Unit <random> generated.
+
+Analyzing Entity <BIN_TO_BCD_12BIT> in library <work> (Architecture <behavioral>).
+Entity <BIN_TO_BCD_12BIT> analyzed. Unit <BIN_TO_BCD_12BIT> generated.
+
 Analyzing Entity <rom_1> in library <work> (Architecture <behavioral>).
-WARNING:Xst:790 - "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/rom_1.vhd" line 146: Index value(s) does not match array range, simulation mismatch.
 Entity <rom_1> analyzed. Unit <rom_1> generated.
+
+Analyzing Entity <rom_2> in library <work> (Architecture <behavioral>).
+Entity <rom_2> analyzed. Unit <rom_2> generated.
+
+Analyzing Entity <rom_3> in library <work> (Architecture <behavioral>).
+WARNING:Xst:790 - "C:/Users/Sladecek/Desktop/Swing Copters/graphic/rom_3.vhd" line 248: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "C:/Users/Sladecek/Desktop/Swing Copters/graphic/rom_3.vhd" line 249: Index value(s) does not match array range, simulation mismatch.
+Entity <rom_3> analyzed. Unit <rom_3> generated.
+
+Analyzing Entity <rom_4> in library <work> (Architecture <behavioral>).
+WARNING:Xst:790 - "C:/Users/Sladecek/Desktop/Swing Copters/graphic/rom_4.vhd" line 496: Index value(s) does not match array range, simulation mismatch.
+Entity <rom_4> analyzed. Unit <rom_4> generated.
 
 
 =========================================================================
@@ -145,16 +284,16 @@ Entity <rom_1> analyzed. Unit <rom_1> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <vga_sync>.
-    Related source file is "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/vga_sync.vhd".
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/graphic/vga_sync.vhd".
     Found 1-bit register for signal <divider_reg>.
-    Found 10-bit comparator greatequal for signal <h_sync$cmp_ge0000> created at line 120.
-    Found 10-bit comparator lessequal for signal <h_sync$cmp_le0000> created at line 120.
+    Found 10-bit comparator greatequal for signal <h_sync$cmp_ge0000> created at line 118.
+    Found 10-bit comparator lessequal for signal <h_sync$cmp_le0000> created at line 118.
     Found 1-bit register for signal <h_sync_reg>.
-    Found 10-bit comparator greatequal for signal <v_sync$cmp_ge0000> created at line 122.
-    Found 10-bit comparator lessequal for signal <v_sync$cmp_le0000> created at line 122.
+    Found 10-bit comparator greatequal for signal <v_sync$cmp_ge0000> created at line 120.
+    Found 10-bit comparator lessequal for signal <v_sync$cmp_le0000> created at line 120.
     Found 1-bit register for signal <v_sync_reg>.
-    Found 10-bit comparator less for signal <video_on$cmp_lt0000> created at line 128.
-    Found 10-bit comparator less for signal <video_on$cmp_lt0001> created at line 128.
+    Found 10-bit comparator less for signal <video_on$cmp_lt0000> created at line 126.
+    Found 10-bit comparator less for signal <video_on$cmp_lt0001> created at line 126.
     Found 10-bit up counter for signal <x_counter_reg>.
     Found 10-bit up counter for signal <y_counter_reg>.
     Summary:
@@ -164,87 +303,860 @@ Synthesizing Unit <vga_sync>.
 Unit <vga_sync> synthesized.
 
 
-Synthesizing Unit <rom_1>.
-    Related source file is "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/rom_1.vhd".
-WARNING:Xst:647 - Input <address<14:12>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:1780 - Signal <rom_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-    Found 3072x4-bit ROM for signal <data$rom0000> created at line 146.
+Synthesizing Unit <universal_divider_1>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/divider_universal/divider.vhd".
+    Found 23-bit register for signal <counter>.
+    Found 23-bit adder for signal <counter_next$addsub0000> created at line 59.
     Summary:
-	inferred   1 ROM(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <universal_divider_1> synthesized.
+
+
+Synthesizing Unit <universal_divider_2>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/divider_universal/divider.vhd".
+    Found 22-bit register for signal <counter>.
+    Found 22-bit adder for signal <counter_next$addsub0000> created at line 59.
+    Summary:
+	inferred  22 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <universal_divider_2> synthesized.
+
+
+Synthesizing Unit <universal_divider_3>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/divider_universal/divider.vhd".
+    Found 24-bit register for signal <counter>.
+    Found 24-bit adder for signal <counter_next$addsub0000> created at line 59.
+    Summary:
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <universal_divider_3> synthesized.
+
+
+Synthesizing Unit <universal_divider_4>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/divider_universal/divider.vhd".
+    Found 20-bit register for signal <counter>.
+    Found 20-bit adder for signal <counter_next$addsub0000> created at line 59.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <universal_divider_4> synthesized.
+
+
+Synthesizing Unit <universal_divider_5>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/divider_universal/divider.vhd".
+    Found 20-bit register for signal <counter>.
+    Found 20-bit adder for signal <counter_next$addsub0000> created at line 59.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <universal_divider_5> synthesized.
+
+
+Synthesizing Unit <universal_divider_6>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/divider_universal/divider.vhd".
+    Found 19-bit register for signal <counter>.
+    Found 19-bit adder for signal <counter_next$addsub0000> created at line 59.
+    Summary:
+	inferred  19 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <universal_divider_6> synthesized.
+
+
+Synthesizing Unit <universal_divider_7>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/divider_universal/divider.vhd".
+    Found 18-bit register for signal <counter>.
+    Found 18-bit adder for signal <counter_next$addsub0000> created at line 59.
+    Summary:
+	inferred  18 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <universal_divider_7> synthesized.
+
+
+Synthesizing Unit <universal_divider_8>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/divider_universal/divider.vhd".
+    Found 14-bit register for signal <counter>.
+    Found 14-bit adder for signal <counter_next$addsub0000> created at line 59.
+    Summary:
+	inferred  14 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <universal_divider_8> synthesized.
+
+
+Synthesizing Unit <universal_divider_9>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/divider_universal/divider.vhd".
+    Found 19-bit register for signal <counter>.
+    Found 19-bit adder for signal <counter_next$addsub0000> created at line 59.
+    Summary:
+	inferred  19 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <universal_divider_9> synthesized.
+
+
+Synthesizing Unit <universal_counter_1>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/counter_universal/universal_counter.vhd".
+    Found 2-bit up counter for signal <count_q>.
+    Found 2-bit comparator less for signal <count_q$cmp_lt0000> created at line 25.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Comparator(s).
+Unit <universal_counter_1> synthesized.
+
+
+Synthesizing Unit <universal_counter_2>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/counter_universal/universal_counter.vhd".
+    Found 5-bit up counter for signal <count_q>.
+    Found 5-bit comparator less for signal <count_q$cmp_lt0000> created at line 25.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Comparator(s).
+Unit <universal_counter_2> synthesized.
+
+
+Synthesizing Unit <universal_counter_3>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/counter_universal/universal_counter.vhd".
+    Found 4-bit up counter for signal <count_q>.
+    Found 4-bit comparator less for signal <count_q$cmp_lt0000> created at line 25.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Comparator(s).
+Unit <universal_counter_3> synthesized.
+
+
+Synthesizing Unit <debouncer>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/debouncer/debouncer.vhd".
+    Found finite state machine <FSM_0> for signal <present_state>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 17                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <debouncer> synthesized.
+
+
+Synthesizing Unit <random>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/random/random.vhd".
+    Using one-hot encoding for signal <SEED>.
+    Found 2-bit xor2 for signal <D_klop<13:12>>.
+    Found 1-bit xor2 for signal <D_klop<10>>.
+    Found 16-bit register for signal <Q_klop>.
+    Found 2-bit register for signal <SEED>.
+    Found 1-bit register for signal <Seed_change_enable_Q<0>>.
+    Summary:
+	inferred  19 D-type flip-flop(s).
+Unit <random> synthesized.
+
+
+Synthesizing Unit <BIN_TO_BCD_12BIT>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/bintobcd/BIN_TO_BCD_10BIT.vhd".
+WARNING:Xst:646 - Signal <Q_klop_tisice<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit register for signal <BCD_Jednotky>.
+    Found 4-bit register for signal <BCD_Stovky>.
+    Found 4-bit register for signal <BCD_Tisice>.
+    Found 4-bit register for signal <BCD_Desitky>.
+    Found 31-bit up counter for signal <cyklu>.
+    Found 31-bit comparator greater for signal <cyklu$cmp_gt0000> created at line 68.
+    Found 12-bit register for signal <Q_BIN_cislo>.
+    Found 4-bit register for signal <Q_klop_desitky>.
+    Found 4-bit adder for signal <Q_klop_desitky$addsub0000> created at line 97.
+    Found 4-bit comparator greater for signal <Q_klop_desitky$cmp_gt0000> created at line 96.
+    Found 4-bit register for signal <Q_klop_jednotky>.
+    Found 4-bit adder for signal <Q_klop_jednotky$addsub0000> created at line 91.
+    Found 4-bit comparator greater for signal <Q_klop_jednotky$cmp_gt0000> created at line 90.
+    Found 4-bit register for signal <Q_klop_stovky>.
+    Found 4-bit adder for signal <Q_klop_stovky$addsub0000> created at line 103.
+    Found 4-bit comparator greater for signal <Q_klop_stovky$cmp_gt0000> created at line 102.
+    Found 4-bit register for signal <Q_klop_tisice>.
+    Found 4-bit adder for signal <Q_klop_tisice$addsub0000> created at line 109.
+    Found 4-bit comparator greater for signal <Q_klop_tisice$cmp_gt0000> created at line 108.
+    Found 1-bit register for signal <spusteno>.
+    Found 31-bit comparator lessequal for signal <spusteno$cmp_le0000> created at line 68.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  45 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   6 Comparator(s).
+Unit <BIN_TO_BCD_12BIT> synthesized.
+
+
+Synthesizing Unit <rom_1>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/graphic/rom_1.vhd".
+    Found 8192x4-bit ROM for signal <data_a$rom0000> created at line 315.
+    Found 8192x4-bit ROM for signal <data_b$rom0000> created at line 316.
+    Found 4-bit register for signal <data_a>.
+    Found 4-bit register for signal <data_b>.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   8 D-type flip-flop(s).
 Unit <rom_1> synthesized.
 
 
-Synthesizing Unit <top>.
-    Related source file is "C:/Users/Morrisiak/Desktop/Swing Copters/graphic/top.vhd".
-WARNING:Xst:653 - Signal <vrtula2_y> is used but never assigned. This sourceless signal will be automatically connected to value 0000100000.
-WARNING:Xst:653 - Signal <vrtula2_x> is used but never assigned. This sourceless signal will be automatically connected to value 0000100000.
-WARNING:Xst:653 - Signal <vrtula1_y> is used but never assigned. This sourceless signal will be automatically connected to value 0000100000.
-WARNING:Xst:653 - Signal <vrtula1_x> is used but never assigned. This sourceless signal will be automatically connected to value 0001000000.
-WARNING:Xst:1780 - Signal <vga_clk> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <rgb_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <panacek_y> is used but never assigned. This sourceless signal will be automatically connected to value 0001000000.
-WARNING:Xst:653 - Signal <panacek_x> is used but never assigned. This sourceless signal will be automatically connected to value 0000110000.
-WARNING:Xst:646 - Signal <db_data<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found 15-bit register for signal <addr>.
-    Found 5-bit subtractor for signal <addr$sub0000> created at line 115.
-    Found 5-bit subtractor for signal <addr$sub0001> created at line 115.
-    Found 5-bit subtractor for signal <addr$sub0002> created at line 117.
-    Found 5-bit subtractor for signal <addr$sub0003> created at line 117.
-    Found 5-bit subtractor for signal <addr$sub0004> created at line 119.
-    Found 5-bit subtractor for signal <addr$sub0005> created at line 119.
-    Found 1-bit register for signal <background>.
-    Found 10-bit adder for signal <panacek_on$addsub0000> created at line 127.
-    Found 10-bit subtractor for signal <panacek_on$addsub0001> created at line 127.
-    Found 10-bit adder for signal <panacek_on$addsub0002> created at line 127.
-    Found 10-bit subtractor for signal <panacek_on$addsub0003> created at line 127.
-    Found 10-bit comparator greatequal for signal <panacek_on$cmp_ge0000> created at line 127.
-    Found 10-bit comparator greatequal for signal <panacek_on$cmp_ge0001> created at line 127.
-    Found 10-bit comparator greatequal for signal <panacek_on$cmp_le0000> created at line 127.
-    Found 10-bit comparator greatequal for signal <panacek_on$cmp_le0001> created at line 127.
-    Found 3-bit register for signal <rgb_out_reg>.
-    Found 10-bit adder for signal <vrtula1_on$addsub0000> created at line 131.
-    Found 10-bit subtractor for signal <vrtula1_on$addsub0001> created at line 131.
-    Found 10-bit adder for signal <vrtula1_on$addsub0002> created at line 131.
-    Found 10-bit subtractor for signal <vrtula1_on$addsub0003> created at line 131.
-    Found 10-bit comparator greatequal for signal <vrtula1_on$cmp_ge0000> created at line 131.
-    Found 10-bit comparator greatequal for signal <vrtula1_on$cmp_ge0001> created at line 131.
-    Found 10-bit comparator greatequal for signal <vrtula1_on$cmp_le0000> created at line 131.
-    Found 10-bit comparator greatequal for signal <vrtula1_on$cmp_le0001> created at line 131.
-    Found 10-bit adder for signal <vrtula2_on$addsub0000> created at line 129.
-    Found 10-bit subtractor for signal <vrtula2_on$addsub0001> created at line 129.
-    Found 10-bit adder for signal <vrtula2_on$addsub0002> created at line 129.
-    Found 10-bit subtractor for signal <vrtula2_on$addsub0003> created at line 129.
-    Found 10-bit comparator greatequal for signal <vrtula2_on$cmp_ge0000> created at line 129.
-    Found 10-bit comparator greatequal for signal <vrtula2_on$cmp_ge0001> created at line 129.
-    Found 10-bit comparator greatequal for signal <vrtula2_on$cmp_le0000> created at line 129.
-    Found 10-bit comparator greatequal for signal <vrtula2_on$cmp_le0001> created at line 129.
+Synthesizing Unit <rom_2>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/graphic/rom_2.vhd".
+    Found 4096x4-bit ROM for signal <data_a$rom0000> created at line 186.
+    Found 4096x4-bit ROM for signal <data_b$rom0000> created at line 187.
+    Found 4-bit register for signal <data_a>.
+    Found 4-bit register for signal <data_b>.
     Summary:
-	inferred  19 D-type flip-flop(s).
-	inferred  18 Adder/Subtractor(s).
-	inferred  12 Comparator(s).
+	inferred   2 ROM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <rom_2> synthesized.
+
+
+Synthesizing Unit <rom_3>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/graphic/rom_3.vhd".
+    Found 12288x4-bit ROM for signal <data_a$rom0000> created at line 248.
+    Found 12288x4-bit ROM for signal <data_b$rom0000> created at line 249.
+    Found 4-bit register for signal <data_a>.
+    Found 4-bit register for signal <data_b>.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <rom_3> synthesized.
+
+
+Synthesizing Unit <rom_4>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/graphic/rom_4.vhd".
+    Found 6656x4-bit ROM for signal <data$rom0000> created at line 496.
+    Found 4-bit register for signal <data>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   4 D-type flip-flop(s).
+Unit <rom_4> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "C:/Users/Sladecek/Desktop/Swing Copters/graphic/top.vhd".
+WARNING:Xst:653 - Signal <vrtula2_y> is used but never assigned. This sourceless signal will be automatically connected to value 0100100000.
+WARNING:Xst:1780 - Signal <vrtula2_x> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <vrtula1_y> is used but never assigned. This sourceless signal will be automatically connected to value 0100100000.
+WARNING:Xst:1780 - Signal <vrtula1_x> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <vprekazka2_y<9:5>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <vprekazka2_y<4:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
+WARNING:Xst:653 - Signal <vprekazka2_x> is used but never assigned. This sourceless signal will be automatically connected to value 1000110000.
+WARNING:Xst:1780 - Signal <vprekazka1_y<9:5>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <vprekazka1_y<4:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
+WARNING:Xst:653 - Signal <vprekazka1_x> is used but never assigned. This sourceless signal will be automatically connected to value 0000111001.
+WARNING:Xst:653 - Signal <tit_x_y> is used but never assigned. This sourceless signal will be automatically connected to value 0000011110.
+WARNING:Xst:653 - Signal <tit_x_x> is used but never assigned. This sourceless signal will be automatically connected to value 0000010100.
+WARNING:Xst:653 - Signal <tit_t_y> is used but never assigned. This sourceless signal will be automatically connected to value 0010010110.
+WARNING:Xst:653 - Signal <tit_t_x> is used but never assigned. This sourceless signal will be automatically connected to value 0000010100.
+WARNING:Xst:653 - Signal <tit_s_y> is used but never assigned. This sourceless signal will be automatically connected to value 0011110000.
+WARNING:Xst:653 - Signal <tit_s_x> is used but never assigned. This sourceless signal will be automatically connected to value 0000010100.
+WARNING:Xst:653 - Signal <tit_r_y> is used but never assigned. This sourceless signal will be automatically connected to value 0011010010.
+WARNING:Xst:653 - Signal <tit_r_x> is used but never assigned. This sourceless signal will be automatically connected to value 0000010100.
+WARNING:Xst:653 - Signal <tit_p_y> is used but never assigned. This sourceless signal will be automatically connected to value 0001111000.
+WARNING:Xst:653 - Signal <tit_p_x> is used but never assigned. This sourceless signal will be automatically connected to value 0000010100.
+WARNING:Xst:653 - Signal <tit_o_y> is used but never assigned. This sourceless signal will be automatically connected to value 0001011010.
+WARNING:Xst:653 - Signal <tit_o_x> is used but never assigned. This sourceless signal will be automatically connected to value 0000010100.
+WARNING:Xst:653 - Signal <tit_e_y> is used but never assigned. This sourceless signal will be automatically connected to value 0010110100.
+WARNING:Xst:653 - Signal <tit_e_x> is used but never assigned. This sourceless signal will be automatically connected to value 0000010100.
+WARNING:Xst:653 - Signal <tit_c_y> is used but never assigned. This sourceless signal will be automatically connected to value 0000111100.
+WARNING:Xst:653 - Signal <tit_c_x> is used but never assigned. This sourceless signal will be automatically connected to value 0000010100.
+WARNING:Xst:653 - Signal <technika_x> is used but never assigned. This sourceless signal will be automatically connected to value 0100100101.
+WARNING:Xst:1780 - Signal <strom_x<9:6>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <strom_x<5:0>> is used but never assigned. This sourceless signal will be automatically connected to value 100000.
+WARNING:Xst:653 - Signal <stovky_y> is used but never assigned. This sourceless signal will be automatically connected to value 0001100000.
+WARNING:Xst:653 - Signal <stovky_x> is used but never assigned. This sourceless signal will be automatically connected to value 0100100110.
+WARNING:Xst:646 - Signal <scale_helper2<6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <scale_helper1<6>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <press_s_y> is used but never assigned. This sourceless signal will be automatically connected to value 0010000111.
+WARNING:Xst:653 - Signal <press_s_x> is used but never assigned. This sourceless signal will be automatically connected to value 0101001010.
+WARNING:Xst:653 - Signal <press_s2_y> is used but never assigned. This sourceless signal will be automatically connected to value 0010000111.
+WARNING:Xst:653 - Signal <press_s2_x> is used but never assigned. This sourceless signal will be automatically connected to value 0101011100.
+WARNING:Xst:653 - Signal <press_r_y> is used but never assigned. This sourceless signal will be automatically connected to value 0010000111.
+WARNING:Xst:653 - Signal <press_r_x> is used but never assigned. This sourceless signal will be automatically connected to value 0100100110.
+WARNING:Xst:653 - Signal <press_p_y> is used but never assigned. This sourceless signal will be automatically connected to value 0010000111.
+WARNING:Xst:653 - Signal <press_p_x> is used but never assigned. This sourceless signal will be automatically connected to value 0100010100.
+WARNING:Xst:653 - Signal <press_e_y> is used but never assigned. This sourceless signal will be automatically connected to value 0010000111.
+WARNING:Xst:653 - Signal <press_e_x> is used but never assigned. This sourceless signal will be automatically connected to value 0100111000.
+WARNING:Xst:1780 - Signal <panacek_y_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <panacek_y> is used but never assigned. This sourceless signal will be automatically connected to value 0101000000.
+WARNING:Xst:646 - Signal <mrak_x_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <mrak_x> is used but never assigned. This sourceless signal will be automatically connected to value 0010010001.
+WARNING:Xst:646 - Signal <mrak_2_x_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <mrak_2_x> is used but never assigned. This sourceless signal will be automatically connected to value 0010010001.
+WARNING:Xst:646 - Signal <mrak2_x_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <mrak2_x> is used but never assigned. This sourceless signal will be automatically connected to value 0110011010.
+WARNING:Xst:646 - Signal <mrak2_2_x_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <mrak2_2_x> is used but never assigned. This sourceless signal will be automatically connected to value 0110011010.
+WARNING:Xst:646 - Signal <mracek_x_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <mracek_x> is used but never assigned. This sourceless signal will be automatically connected to value 0100110000.
+WARNING:Xst:646 - Signal <mracek_2_x_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <mracek_2_x> is used but never assigned. This sourceless signal will be automatically connected to value 0100110000.
+WARNING:Xst:653 - Signal <let_v_y> is used but never assigned. This sourceless signal will be automatically connected to value 0000100111.
+WARNING:Xst:653 - Signal <let_v_x> is used but never assigned. This sourceless signal will be automatically connected to value 0101100110.
+WARNING:Xst:653 - Signal <let_r_y> is used but never assigned. This sourceless signal will be automatically connected to value 0000100111.
+WARNING:Xst:653 - Signal <let_r_x> is used but never assigned. This sourceless signal will be automatically connected to value 0110001010.
+WARNING:Xst:653 - Signal <let_o_y> is used but never assigned. This sourceless signal will be automatically connected to value 0000100111.
+WARNING:Xst:653 - Signal <let_o_x> is used but never assigned. This sourceless signal will be automatically connected to value 0101010100.
+WARNING:Xst:653 - Signal <let_m_y> is used but never assigned. This sourceless signal will be automatically connected to value 0000100111.
+WARNING:Xst:653 - Signal <let_m_x> is used but never assigned. This sourceless signal will be automatically connected to value 0100100110.
+WARNING:Xst:653 - Signal <let_g_y> is used but never assigned. This sourceless signal will be automatically connected to value 0000100111.
+WARNING:Xst:653 - Signal <let_g_x> is used but never assigned. This sourceless signal will be automatically connected to value 0100000010.
+WARNING:Xst:653 - Signal <let_a_y> is used but never assigned. This sourceless signal will be automatically connected to value 0000100111.
+WARNING:Xst:653 - Signal <let_a_x> is used but never assigned. This sourceless signal will be automatically connected to value 0100010100.
+WARNING:Xst:1780 - Signal <killer2_y> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <killer2_x> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <killer1_y> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <killer1_x> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <jednotky_y> is used but never assigned. This sourceless signal will be automatically connected to value 0001100000.
+WARNING:Xst:653 - Signal <jednotky_x> is used but never assigned. This sourceless signal will be automatically connected to value 0101001010.
+WARNING:Xst:1780 - Signal <hprekazka2_x<9:5>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <hprekazka2_x<4:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
+WARNING:Xst:1780 - Signal <hprekazka1_x<9:5>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <hprekazka1_x<4:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
+WARNING:Xst:1780 - Signal <dratek2_x<9:5>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <dratek2_x<4:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
+WARNING:Xst:1780 - Signal <dratek1_x<9:5>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <dratek1_x<4:0>> is used but never assigned. This sourceless signal will be automatically connected to value 00000.
+WARNING:Xst:653 - Signal <desitky_y> is used but never assigned. This sourceless signal will be automatically connected to value 0001100000.
+WARNING:Xst:653 - Signal <desitky_x> is used but never assigned. This sourceless signal will be automatically connected to value 0100111000.
+WARNING:Xst:646 - Signal <debouncer_rst> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <db_data_reg<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <button_y> is used but never assigned. This sourceless signal will be automatically connected to value 0010100000.
+WARNING:Xst:653 - Signal <button_x> is used but never assigned. This sourceless signal will be automatically connected to value 0100111000.
+    Found 2-bit adder for signal <addr_rom1_a$add0000> created at line 794.
+    Found 5-bit adder for signal <addr_rom1_a$add0001> created at line 794.
+    Found 5-bit subtractor for signal <addr_rom1_a$addsub0000> created at line 794.
+    Found 5-bit subtractor for signal <addr_rom1_a$sub0000> created at line 794.
+    Found 5-bit subtractor for signal <addr_rom1_a$sub0001> created at line 794.
+    Found 5-bit subtractor for signal <addr_rom1_a$sub0002> created at line 794.
+    Found 5-bit subtractor for signal <addr_rom1_a$sub0003> created at line 794.
+    Found 5-bit subtractor for signal <addr_rom1_b$sub0000> created at line 816.
+    Found 5-bit subtractor for signal <addr_rom1_b$sub0002> created at line 816.
+    Found 5-bit subtractor for signal <addr_rom1_b$sub0004> created at line 816.
+    Found 5-bit subtractor for signal <addr_rom1_b$sub0005> created at line 816.
+    Found 5-bit adder for signal <addr_rom2_a$add0000> created at line 842.
+    Found 5-bit adder for signal <addr_rom2_a$add0001> created at line 842.
+    Found 5-bit adder for signal <addr_rom2_a$add0002> created at line 842.
+    Found 5-bit adder for signal <addr_rom2_a$add0003> created at line 842.
+    Found 5-bit adder for signal <addr_rom2_a$add0004> created at line 842.
+    Found 5-bit adder for signal <addr_rom2_a$add0005> created at line 842.
+    Found 5-bit adder for signal <addr_rom2_a$add0006> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$addsub0000> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$addsub0001> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$addsub0002> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$addsub0003> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$addsub0004> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$addsub0005> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$sub0000> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$sub0001> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$sub0002> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$sub0003> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$sub0004> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$sub0005> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$sub0006> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$sub0007> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$sub0008> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$sub0009> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_a$sub0010> created at line 842.
+    Found 5-bit subtractor for signal <addr_rom2_b$sub0000> created at line 876.
+    Found 5-bit subtractor for signal <addr_rom2_b$sub0001> created at line 876.
+    Found 5-bit subtractor for signal <addr_rom2_b$sub0002> created at line 876.
+    Found 5-bit subtractor for signal <addr_rom2_b$sub0003> created at line 876.
+    Found 6-bit subtractor for signal <addr_rom3_a$sub0000> created at line 884.
+    Found 6-bit subtractor for signal <addr_rom3_a$sub0001> created at line 884.
+    Found 6-bit subtractor for signal <addr_rom3_a$sub0002> created at line 884.
+    Found 6-bit subtractor for signal <addr_rom3_a$sub0003> created at line 884.
+    Found 6-bit subtractor for signal <addr_rom3_a$sub0004> created at line 884.
+    Found 6-bit subtractor for signal <addr_rom3_a$sub0005> created at line 884.
+    Found 6-bit subtractor for signal <addr_rom3_a$sub0006> created at line 884.
+    Found 6-bit subtractor for signal <addr_rom3_a$sub0007> created at line 884.
+    Found 6-bit subtractor for signal <addr_rom3_a$sub0008> created at line 884.
+    Found 6-bit subtractor for signal <addr_rom3_a$sub0009> created at line 884.
+    Found 4-bit subtractor for signal <addr_rom4$sub0000> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0001> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0002> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0003> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0004> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0005> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0006> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0007> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0008> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0009> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0010> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0011> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0012> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0013> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0014> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0015> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0016> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0017> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0018> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0019> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0020> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0021> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0022> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0023> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0024> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0025> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0026> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0027> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0028> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0029> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0030> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0031> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0032> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0033> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0034> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0035> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0036> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0037> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0038> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0039> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0040> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0041> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0042> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0043> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0044> created at line 731.
+    Found 4-bit subtractor for signal <addr_rom4$sub0045> created at line 731.
+    Found 1-bit register for signal <button_break_reg>.
+    Found 10-bit adder for signal <button_on$addsub0000> created at line 991.
+    Found 10-bit adder for signal <button_on$addsub0001> created at line 991.
+    Found 10-bit comparator greater for signal <button_on$cmp_gt0000> created at line 991.
+    Found 10-bit comparator greater for signal <button_on$cmp_gt0001> created at line 991.
+    Found 10-bit comparator greatequal for signal <button_on$cmp_le0000> created at line 991.
+    Found 10-bit comparator greatequal for signal <button_on$cmp_le0001> created at line 991.
+    Found 10-bit adder for signal <desitky_on$addsub0000> created at line 934.
+    Found 10-bit adder for signal <desitky_on$addsub0001> created at line 934.
+    Found 10-bit comparator greater for signal <desitky_on$cmp_gt0000> created at line 934.
+    Found 10-bit comparator greater for signal <desitky_on$cmp_gt0001> created at line 934.
+    Found 10-bit comparator greatequal for signal <desitky_on$cmp_le0000> created at line 934.
+    Found 10-bit comparator greatequal for signal <desitky_on$cmp_le0001> created at line 934.
+    Found 10-bit adder for signal <dratek1_help>.
+    Found 4-bit adder for signal <dratek1_on$add0000> created at line 1037.
+    Found 14-bit adder for signal <dratek1_on$add0001> created at line 1037.
+    Found 14-bit adder for signal <dratek1_on$addsub0000> created at line 1037.
+    Found 14-bit adder for signal <dratek1_on$addsub0001> created at line 1037.
+    Found 10-bit adder for signal <dratek1_on$addsub0002> created at line 1037.
+    Found 14-bit comparator greater for signal <dratek1_on$cmp_gt0000> created at line 1037.
+    Found 14-bit comparator greater for signal <dratek1_on$cmp_gt0001> created at line 1037.
+    Found 10-bit comparator greater for signal <dratek1_on$cmp_gt0002> created at line 1037.
+    Found 14-bit comparator lessequal for signal <dratek1_on$cmp_le0000> created at line 1037.
+    Found 14-bit comparator lessequal for signal <dratek1_on$cmp_le0001> created at line 1037.
+    Found 10-bit comparator lessequal for signal <dratek1_on$cmp_le0002> created at line 1037.
+    Found 10-bit comparator lessequal for signal <dratek1_on$cmp_le0003> created at line 1037.
+    Found 10-bit register for signal <dratek1_y_reg>.
+    Found 10-bit adder for signal <dratek1_y_reg$share0000>.
+    Found 10-bit adder for signal <dratek2_help>.
+    Found 14-bit adder for signal <dratek2_on$addsub0000> created at line 1070.
+    Found 14-bit adder for signal <dratek2_on$addsub0001> created at line 1070.
+    Found 10-bit adder for signal <dratek2_on$addsub0002> created at line 1070.
+    Found 14-bit comparator greater for signal <dratek2_on$cmp_gt0000> created at line 1070.
+    Found 14-bit comparator greater for signal <dratek2_on$cmp_gt0001> created at line 1070.
+    Found 10-bit comparator greater for signal <dratek2_on$cmp_gt0002> created at line 1070.
+    Found 14-bit comparator lessequal for signal <dratek2_on$cmp_le0000> created at line 1070.
+    Found 14-bit comparator lessequal for signal <dratek2_on$cmp_le0001> created at line 1070.
+    Found 10-bit comparator lessequal for signal <dratek2_on$cmp_le0002> created at line 1070.
+    Found 10-bit comparator lessequal for signal <dratek2_on$cmp_le0003> created at line 1070.
+    Found 10-bit register for signal <dratek2_y_reg>.
+    Found 10-bit adder for signal <dratek2_y_reg$addsub0000> created at line 632.
+    Found 2-bit register for signal <game_reg>.
+    Found 10-bit adder for signal <hprekazka1_help>.
+    Found 4-bit adder for signal <hprekazka1_on$add0000> created at line 1017.
+    Found 14-bit adder for signal <hprekazka1_on$addsub0000> created at line 1017.
+    Found 14-bit adder for signal <hprekazka1_on$addsub0001> created at line 1017.
+    Found 10-bit adder for signal <hprekazka1_on$addsub0002> created at line 1017.
+    Found 14-bit comparator greatequal for signal <hprekazka1_on$cmp_ge0000> created at line 1017.
+    Found 10-bit comparator lessequal for signal <hprekazka1_on$cmp_ge0001> created at line 1017.
+    Found 10-bit comparator greater for signal <hprekazka1_on$cmp_gt0000> created at line 1017.
+    Found 10-bit comparator greatequal for signal <hprekazka1_on$cmp_le0000> created at line 1017.
+    Found 14-bit comparator lessequal for signal <hprekazka1_on$cmp_le0001> created at line 1017.
+    Found 10-bit comparator lessequal for signal <hprekazka1_on$cmp_le0002> created at line 1017.
+    Found 10-bit comparator lessequal for signal <hprekazka1_on$cmp_le0003> created at line 1017.
+    Found 10-bit register for signal <hprekazka1_y_reg>.
+    Found 10-bit adder for signal <hprekazka1_y_reg$addsub0000> created at line 634.
+    Found 10-bit adder for signal <hprekazka2_help>.
+    Found 4-bit adder for signal <hprekazka2_on$add0000> created at line 1023.
+    Found 14-bit adder for signal <hprekazka2_on$addsub0000> created at line 1023.
+    Found 14-bit adder for signal <hprekazka2_on$addsub0001> created at line 1023.
+    Found 10-bit adder for signal <hprekazka2_on$addsub0002> created at line 1023.
+    Found 14-bit comparator greatequal for signal <hprekazka2_on$cmp_ge0000> created at line 1023.
+    Found 10-bit comparator greater for signal <hprekazka2_on$cmp_gt0000> created at line 1023.
+    Found 14-bit comparator lessequal for signal <hprekazka2_on$cmp_le0000> created at line 1023.
+    Found 10-bit comparator lessequal for signal <hprekazka2_on$cmp_le0001> created at line 1023.
+    Found 10-bit comparator lessequal for signal <hprekazka2_on$cmp_le0002> created at line 1023.
+    Found 10-bit register for signal <hprekazka2_y_reg>.
+    Found 10-bit adder for signal <hprekazka2_y_reg$addsub0000> created at line 629.
+    Found 10-bit adder for signal <jednotky_on$addsub0000> created at line 932.
+    Found 10-bit adder for signal <jednotky_on$addsub0001> created at line 932.
+    Found 10-bit comparator greater for signal <jednotky_on$cmp_gt0000> created at line 932.
+    Found 10-bit comparator greater for signal <jednotky_on$cmp_gt0001> created at line 932.
+    Found 10-bit comparator greatequal for signal <jednotky_on$cmp_le0000> created at line 932.
+    Found 10-bit comparator greatequal for signal <jednotky_on$cmp_le0001> created at line 932.
+    Found 10-bit adder for signal <killer1_help>.
+    Found 10-bit adder for signal <killer1_help$add0000> created at line 1110.
+    Found 10-bit adder for signal <killer1_on$add0000> created at line 1048.
+    Found 14-bit adder for signal <killer1_on$addsub0000> created at line 1048.
+    Found 14-bit subtractor for signal <killer1_on$addsub0001> created at line 1048.
+    Found 14-bit adder for signal <killer1_on$addsub0002> created at line 1048.
+    Found 14-bit adder for signal <killer1_on$addsub0003> created at line 1048.
+    Found 14-bit subtractor for signal <killer1_on$addsub0004> created at line 1048.
+    Found 14-bit adder for signal <killer1_on$addsub0005> created at line 1048.
+    Found 10-bit adder for signal <killer1_on$addsub0006> created at line 1048.
+    Found 10-bit adder for signal <killer1_on$addsub0007> created at line 1048.
+    Found 14-bit comparator greater for signal <killer1_on$cmp_gt0000> created at line 1048.
+    Found 14-bit comparator greater for signal <killer1_on$cmp_gt0001> created at line 1048.
+    Found 10-bit comparator greater for signal <killer1_on$cmp_gt0002> created at line 1048.
+    Found 14-bit comparator lessequal for signal <killer1_on$cmp_le0000> created at line 1048.
+    Found 14-bit comparator lessequal for signal <killer1_on$cmp_le0001> created at line 1048.
+    Found 10-bit comparator lessequal for signal <killer1_on$cmp_le0002> created at line 1048.
+    Found 10-bit comparator lessequal for signal <killer1_on$cmp_le0003> created at line 1048.
+    Found 10-bit adder for signal <killer2_help>.
+    Found 4-bit adder for signal <killer2_on$add0000> created at line 1059.
+    Found 10-bit adder for signal <killer2_on$add0001> created at line 1059.
+    Found 10-bit adder for signal <killer2_on$add0002> created at line 1059.
+    Found 14-bit adder for signal <killer2_on$add0003> created at line 1059.
+    Found 14-bit adder for signal <killer2_on$addsub0000> created at line 1059.
+    Found 14-bit subtractor for signal <killer2_on$addsub0001> created at line 1059.
+    Found 14-bit adder for signal <killer2_on$addsub0002> created at line 1059.
+    Found 14-bit adder for signal <killer2_on$addsub0003> created at line 1059.
+    Found 14-bit subtractor for signal <killer2_on$addsub0004> created at line 1059.
+    Found 14-bit adder for signal <killer2_on$addsub0005> created at line 1059.
+    Found 10-bit adder for signal <killer2_on$addsub0006> created at line 1059.
+    Found 10-bit adder for signal <killer2_on$addsub0007> created at line 1059.
+    Found 14-bit comparator greater for signal <killer2_on$cmp_gt0000> created at line 1059.
+    Found 14-bit comparator greater for signal <killer2_on$cmp_gt0001> created at line 1059.
+    Found 10-bit comparator greater for signal <killer2_on$cmp_gt0002> created at line 1059.
+    Found 14-bit comparator lessequal for signal <killer2_on$cmp_le0000> created at line 1059.
+    Found 14-bit comparator lessequal for signal <killer2_on$cmp_le0001> created at line 1059.
+    Found 10-bit comparator lessequal for signal <killer2_on$cmp_le0002> created at line 1059.
+    Found 10-bit comparator lessequal for signal <killer2_on$cmp_le0003> created at line 1059.
+    Found 10-bit register for signal <killer_x_reg>.
+    Found 10-bit register for signal <killer_y_reg>.
+    Found 10-bit adder for signal <let_a_on$addsub0000> created at line 997.
+    Found 10-bit adder for signal <let_a_on$addsub0001> created at line 997.
+    Found 10-bit comparator greater for signal <let_a_on$cmp_gt0000> created at line 997.
+    Found 10-bit comparator greater for signal <let_a_on$cmp_gt0001> created at line 997.
+    Found 10-bit comparator greatequal for signal <let_a_on$cmp_le0000> created at line 997.
+    Found 10-bit comparator greatequal for signal <let_a_on$cmp_le0001> created at line 997.
+    Found 10-bit adder for signal <let_g_on$addsub0000> created at line 995.
+    Found 10-bit adder for signal <let_g_on$addsub0001> created at line 995.
+    Found 10-bit comparator greater for signal <let_g_on$cmp_gt0000> created at line 995.
+    Found 10-bit comparator greater for signal <let_g_on$cmp_gt0001> created at line 995.
+    Found 10-bit comparator greatequal for signal <let_g_on$cmp_le0000> created at line 995.
+    Found 10-bit comparator greatequal for signal <let_g_on$cmp_le0001> created at line 995.
+    Found 10-bit adder for signal <let_m_on$addsub0000> created at line 999.
+    Found 10-bit adder for signal <let_m_on$addsub0001> created at line 999.
+    Found 10-bit comparator greater for signal <let_m_on$cmp_gt0000> created at line 999.
+    Found 10-bit comparator greater for signal <let_m_on$cmp_gt0001> created at line 999.
+    Found 10-bit comparator greatequal for signal <let_m_on$cmp_le0000> created at line 999.
+    Found 10-bit comparator greatequal for signal <let_m_on$cmp_le0001> created at line 999.
+    Found 10-bit adder for signal <let_o_on$addsub0000> created at line 1001.
+    Found 10-bit adder for signal <let_o_on$addsub0001> created at line 1001.
+    Found 10-bit comparator greater for signal <let_o_on$cmp_gt0000> created at line 1001.
+    Found 10-bit comparator greater for signal <let_o_on$cmp_gt0001> created at line 1001.
+    Found 10-bit comparator greatequal for signal <let_o_on$cmp_le0000> created at line 1001.
+    Found 10-bit comparator greatequal for signal <let_o_on$cmp_le0001> created at line 1001.
+    Found 10-bit adder for signal <let_r_on$addsub0000> created at line 1005.
+    Found 10-bit adder for signal <let_r_on$addsub0001> created at line 1005.
+    Found 10-bit comparator greater for signal <let_r_on$cmp_gt0000> created at line 1005.
+    Found 10-bit comparator greater for signal <let_r_on$cmp_gt0001> created at line 1005.
+    Found 10-bit comparator greatequal for signal <let_r_on$cmp_le0000> created at line 1005.
+    Found 10-bit comparator greatequal for signal <let_r_on$cmp_le0001> created at line 1005.
+    Found 10-bit adder for signal <let_v_on$addsub0000> created at line 1003.
+    Found 10-bit adder for signal <let_v_on$addsub0001> created at line 1003.
+    Found 10-bit comparator greater for signal <let_v_on$cmp_gt0000> created at line 1003.
+    Found 10-bit comparator greater for signal <let_v_on$cmp_gt0001> created at line 1003.
+    Found 10-bit comparator greatequal for signal <let_v_on$cmp_le0000> created at line 1003.
+    Found 10-bit comparator greatequal for signal <let_v_on$cmp_le0001> created at line 1003.
+    Found 1-bit register for signal <module_reset_reg>.
+    Found 10-bit adder for signal <mracek_2_help>.
+    Found 10-bit adder for signal <mracek_2_on$addsub0000> created at line 1033.
+    Found 10-bit adder for signal <mracek_2_on$addsub0001> created at line 1033.
+    Found 10-bit comparator greater for signal <mracek_2_on$cmp_gt0000> created at line 1033.
+    Found 10-bit comparator greater for signal <mracek_2_on$cmp_gt0001> created at line 1033.
+    Found 10-bit comparator greatequal for signal <mracek_2_on$cmp_le0000> created at line 1033.
+    Found 10-bit comparator lessequal for signal <mracek_2_on$cmp_le0001> created at line 1033.
+    Found 10-bit comparator lessequal for signal <mracek_2_on$cmp_le0002> created at line 1033.
+    Found 10-bit register for signal <mracek_2_y_reg>.
+    Found 10-bit addsub for signal <mracek_2_y_reg$mux0000>.
+    Found 10-bit adder for signal <mracek_help>.
+    Found 10-bit adder for signal <mracek_on$addsub0000> created at line 1031.
+    Found 10-bit adder for signal <mracek_on$addsub0001> created at line 1031.
+    Found 10-bit comparator greater for signal <mracek_on$cmp_gt0000> created at line 1031.
+    Found 10-bit comparator greater for signal <mracek_on$cmp_gt0001> created at line 1031.
+    Found 10-bit comparator greatequal for signal <mracek_on$cmp_le0000> created at line 1031.
+    Found 10-bit comparator lessequal for signal <mracek_on$cmp_le0001> created at line 1031.
+    Found 10-bit comparator lessequal for signal <mracek_on$cmp_le0002> created at line 1031.
+    Found 10-bit register for signal <mracek_y_reg>.
+    Found 10-bit addsub for signal <mracek_y_reg$mux0000>.
+    Found 10-bit adder for signal <mrak1_2_help>.
+    Found 10-bit adder for signal <mrak1_help>.
+    Found 10-bit adder for signal <mrak2_2_help>.
+    Found 10-bit adder for signal <mrak2_2_on$addsub0000> created at line 1091.
+    Found 10-bit adder for signal <mrak2_2_on$addsub0001> created at line 1091.
+    Found 10-bit comparator greatequal for signal <mrak2_2_on$cmp_ge0000> created at line 1091.
+    Found 10-bit comparator greater for signal <mrak2_2_on$cmp_gt0000> created at line 1091.
+    Found 10-bit comparator greatequal for signal <mrak2_2_on$cmp_le0000> created at line 1091.
+    Found 10-bit comparator lessequal for signal <mrak2_2_on$cmp_le0001> created at line 1091.
+    Found 10-bit comparator lessequal for signal <mrak2_2_on$cmp_le0002> created at line 1091.
+    Found 10-bit register for signal <mrak2_2_y_reg>.
+    Found 10-bit addsub for signal <mrak2_2_y_reg$mux0000>.
+    Found 10-bit adder for signal <mrak2_help>.
+    Found 10-bit adder for signal <mrak2_on$addsub0000> created at line 1086.
+    Found 10-bit adder for signal <mrak2_on$addsub0001> created at line 1086.
+    Found 10-bit comparator greatequal for signal <mrak2_on$cmp_ge0000> created at line 1086.
+    Found 10-bit comparator greater for signal <mrak2_on$cmp_gt0000> created at line 1086.
+    Found 10-bit comparator greatequal for signal <mrak2_on$cmp_le0000> created at line 1086.
+    Found 10-bit comparator lessequal for signal <mrak2_on$cmp_le0001> created at line 1086.
+    Found 10-bit comparator lessequal for signal <mrak2_on$cmp_le0002> created at line 1086.
+    Found 10-bit register for signal <mrak2_y_reg>.
+    Found 10-bit addsub for signal <mrak2_y_reg$mux0000>.
+    Found 10-bit adder for signal <mrak_2_on$addsub0000> created at line 1089.
+    Found 10-bit adder for signal <mrak_2_on$addsub0001> created at line 1089.
+    Found 10-bit comparator greatequal for signal <mrak_2_on$cmp_ge0000> created at line 1089.
+    Found 10-bit comparator greater for signal <mrak_2_on$cmp_gt0000> created at line 1089.
+    Found 10-bit comparator greatequal for signal <mrak_2_on$cmp_le0000> created at line 1089.
+    Found 10-bit comparator lessequal for signal <mrak_2_on$cmp_le0001> created at line 1089.
+    Found 10-bit comparator lessequal for signal <mrak_2_on$cmp_le0002> created at line 1089.
+    Found 10-bit register for signal <mrak_2_y_reg>.
+    Found 10-bit addsub for signal <mrak_2_y_reg$mux0000>.
+    Found 10-bit adder for signal <mrak_on$addsub0000> created at line 1084.
+    Found 10-bit adder for signal <mrak_on$addsub0001> created at line 1084.
+    Found 10-bit comparator greatequal for signal <mrak_on$cmp_ge0000> created at line 1084.
+    Found 10-bit comparator greater for signal <mrak_on$cmp_gt0000> created at line 1084.
+    Found 10-bit comparator greatequal for signal <mrak_on$cmp_le0000> created at line 1084.
+    Found 10-bit comparator lessequal for signal <mrak_on$cmp_le0001> created at line 1084.
+    Found 10-bit comparator lessequal for signal <mrak_on$cmp_le0002> created at line 1084.
+    Found 10-bit register for signal <mrak_y_reg>.
+    Found 10-bit addsub for signal <mrak_y_reg$mux0000>.
+    Found 1-bit register for signal <orientation_reg>.
+    Found 10-bit adder for signal <panacek_on$addsub0000> created at line 1008.
+    Found 10-bit adder for signal <panacek_on$addsub0001> created at line 1008.
+    Found 10-bit comparator greater for signal <panacek_on$cmp_gt0000> created at line 1008.
+    Found 10-bit comparator greater for signal <panacek_on$cmp_gt0001> created at line 1008.
+    Found 10-bit comparator lessequal for signal <panacek_on$cmp_le0000> created at line 1008.
+    Found 10-bit comparator greatequal for signal <panacek_on$cmp_le0001> created at line 1008.
+    Found 10-bit register for signal <panacek_x_reg>.
+    Found 10-bit addsub for signal <panacek_x_reg$mux0000> created at line 499.
+    Found 10-bit adder for signal <press_e_on$addsub0000> created at line 962.
+    Found 10-bit adder for signal <press_e_on$addsub0001> created at line 962.
+    Found 10-bit adder for signal <press_e_on$addsub0002> created at line 962.
+    Found 10-bit subtractor for signal <press_e_on$addsub0003> created at line 962.
+    Found 10-bit adder for signal <press_e_on$addsub0004> created at line 962.
+    Found 10-bit adder for signal <press_e_on$addsub0005> created at line 962.
+    Found 10-bit comparator greater for signal <press_e_on$cmp_gt0000> created at line 962.
+    Found 10-bit comparator greater for signal <press_e_on$cmp_gt0001> created at line 962.
+    Found 10-bit comparator greater for signal <press_e_on$cmp_gt0002> created at line 962.
+    Found 10-bit comparator greater for signal <press_e_on$cmp_gt0003> created at line 962.
+    Found 10-bit comparator lessequal for signal <press_e_on$cmp_le0000> created at line 962.
+    Found 10-bit comparator lessequal for signal <press_e_on$cmp_le0001> created at line 962.
+    Found 10-bit comparator greatequal for signal <press_e_on$cmp_le0002> created at line 962.
+    Found 10-bit comparator greatequal for signal <press_e_on$cmp_le0003> created at line 962.
+    Found 10-bit adder for signal <press_p_on$addsub0000> created at line 958.
+    Found 10-bit adder for signal <press_p_on$addsub0001> created at line 958.
+    Found 10-bit comparator greater for signal <press_p_on$cmp_gt0000> created at line 958.
+    Found 10-bit comparator greater for signal <press_p_on$cmp_gt0001> created at line 958.
+    Found 10-bit comparator greatequal for signal <press_p_on$cmp_le0000> created at line 958.
+    Found 10-bit comparator greatequal for signal <press_p_on$cmp_le0001> created at line 958.
+    Found 10-bit adder for signal <press_r_on$addsub0000> created at line 960.
+    Found 10-bit adder for signal <press_r_on$addsub0001> created at line 960.
+    Found 10-bit comparator greater for signal <press_r_on$cmp_gt0000> created at line 960.
+    Found 10-bit comparator greater for signal <press_r_on$cmp_gt0001> created at line 960.
+    Found 10-bit comparator greatequal for signal <press_r_on$cmp_le0000> created at line 960.
+    Found 10-bit comparator greatequal for signal <press_r_on$cmp_le0001> created at line 960.
+    Found 10-bit adder for signal <press_s2_on$addsub0000> created at line 989.
+    Found 10-bit adder for signal <press_s2_on$addsub0001> created at line 989.
+    Found 10-bit comparator greater for signal <press_s2_on$cmp_gt0000> created at line 989.
+    Found 10-bit comparator greater for signal <press_s2_on$cmp_gt0001> created at line 989.
+    Found 10-bit comparator greatequal for signal <press_s2_on$cmp_le0000> created at line 989.
+    Found 10-bit comparator greatequal for signal <press_s2_on$cmp_le0001> created at line 989.
+    Found 10-bit adder for signal <press_s_on$addsub0000> created at line 987.
+    Found 10-bit adder for signal <press_s_on$addsub0001> created at line 987.
+    Found 10-bit comparator greater for signal <press_s_on$cmp_gt0000> created at line 987.
+    Found 10-bit comparator greater for signal <press_s_on$cmp_gt0001> created at line 987.
+    Found 10-bit comparator greatequal for signal <press_s_on$cmp_le0000> created at line 987.
+    Found 10-bit comparator greatequal for signal <press_s_on$cmp_le0001> created at line 987.
+    Found 4-bit register for signal <random1_reg>.
+    Found 4-bit register for signal <random2_reg>.
+    Found 4-bit register for signal <random_reg>.
+    Found 4-bit comparator greater for signal <random_reg$cmp_gt0000> created at line 473.
+    Found 3-bit register for signal <rgb_out_reg>.
+    Found 10-bit comparator greatequal for signal <rgb_out_reg$cmp_ge0000> created at line 1128.
+    Found 10-bit comparator lessequal for signal <rgb_out_reg$cmp_le0000> created at line 1128.
+    Found 1-bit register for signal <run_reg>.
+    Found 7-bit subtractor for signal <scale_helper1$sub0000> created at line 711.
+    Found 7-bit subtractor for signal <scale_helper2$sub0000> created at line 712.
+    Found 12-bit register for signal <skore_reg>.
+    Found 12-bit adder for signal <skore_reg$add0000> created at line 536.
+    Found 10-bit adder for signal <skore_reg$addsub0000> created at line 534.
+    Found 10-bit comparator not equal for signal <skore_reg$cmp_ne0000> created at line 534.
+    Found 10-bit comparator not equal for signal <skore_reg$cmp_ne0001> created at line 534.
+    Found 10-bit adder for signal <stovky_on$addsub0000> created at line 936.
+    Found 10-bit adder for signal <stovky_on$addsub0001> created at line 936.
+    Found 10-bit comparator greater for signal <stovky_on$cmp_gt0000> created at line 936.
+    Found 10-bit comparator greater for signal <stovky_on$cmp_gt0001> created at line 936.
+    Found 10-bit comparator greatequal for signal <stovky_on$cmp_le0000> created at line 936.
+    Found 10-bit comparator greatequal for signal <stovky_on$cmp_le0001> created at line 936.
+    Found 10-bit adder for signal <strom_on$addsub0000> created at line 1082.
+    Found 10-bit comparator greater for signal <strom_on$cmp_gt0000> created at line 1082.
+    Found 10-bit comparator lessequal for signal <strom_on$cmp_le0000> created at line 1082.
+    Found 10-bit register for signal <strom_y_reg>.
+    Found 10-bit adder for signal <strom_y_reg$add0000> created at line 574.
+    Found 10-bit comparator greater for signal <strom_y_reg$cmp_gt0000> created at line 572.
+    Found 42-bit adder for signal <technika_on$addsub0000> created at line 1096.
+    Found 42-bit adder for signal <technika_on$addsub0001> created at line 1096.
+    Found 42-bit comparator greatequal for signal <technika_on$cmp_ge0000> created at line 1096.
+    Found 42-bit comparator greater for signal <technika_on$cmp_gt0000> created at line 1096.
+    Found 10-bit comparator greatequal for signal <technika_on$cmp_le0000> created at line 1096.
+    Found 10-bit comparator lessequal for signal <technika_on$cmp_le0001> created at line 1096.
+    Found 10-bit register for signal <technika_y_reg>.
+    Found 10-bit adder for signal <technika_y_reg$add0000> created at line 573.
+    Found 10-bit adder for signal <tit_c_on$addsub0000> created at line 942.
+    Found 10-bit adder for signal <tit_c_on$addsub0001> created at line 942.
+    Found 10-bit comparator greater for signal <tit_c_on$cmp_gt0000> created at line 942.
+    Found 10-bit comparator greater for signal <tit_c_on$cmp_gt0001> created at line 942.
+    Found 10-bit comparator greatequal for signal <tit_c_on$cmp_le0000> created at line 942.
+    Found 10-bit comparator greatequal for signal <tit_c_on$cmp_le0001> created at line 942.
+    Found 10-bit adder for signal <tit_e_on$addsub0000> created at line 950.
+    Found 10-bit adder for signal <tit_e_on$addsub0001> created at line 950.
+    Found 10-bit comparator greater for signal <tit_e_on$cmp_gt0000> created at line 950.
+    Found 10-bit comparator greater for signal <tit_e_on$cmp_gt0001> created at line 950.
+    Found 10-bit comparator greatequal for signal <tit_e_on$cmp_le0000> created at line 950.
+    Found 10-bit comparator greatequal for signal <tit_e_on$cmp_le0001> created at line 950.
+    Found 10-bit adder for signal <tit_o_on$addsub0000> created at line 944.
+    Found 10-bit adder for signal <tit_o_on$addsub0001> created at line 944.
+    Found 10-bit comparator greater for signal <tit_o_on$cmp_gt0000> created at line 944.
+    Found 10-bit comparator greater for signal <tit_o_on$cmp_gt0001> created at line 944.
+    Found 10-bit comparator greatequal for signal <tit_o_on$cmp_le0000> created at line 944.
+    Found 10-bit comparator greatequal for signal <tit_o_on$cmp_le0001> created at line 944.
+    Found 10-bit adder for signal <tit_p_on$addsub0000> created at line 946.
+    Found 10-bit adder for signal <tit_p_on$addsub0001> created at line 946.
+    Found 10-bit comparator greater for signal <tit_p_on$cmp_gt0000> created at line 946.
+    Found 10-bit comparator greater for signal <tit_p_on$cmp_gt0001> created at line 946.
+    Found 10-bit comparator greatequal for signal <tit_p_on$cmp_le0000> created at line 946.
+    Found 10-bit comparator greatequal for signal <tit_p_on$cmp_le0001> created at line 946.
+    Found 10-bit adder for signal <tit_r_on$addsub0000> created at line 952.
+    Found 10-bit adder for signal <tit_r_on$addsub0001> created at line 952.
+    Found 10-bit comparator greater for signal <tit_r_on$cmp_gt0000> created at line 952.
+    Found 10-bit comparator greater for signal <tit_r_on$cmp_gt0001> created at line 952.
+    Found 10-bit comparator greatequal for signal <tit_r_on$cmp_le0000> created at line 952.
+    Found 10-bit comparator greatequal for signal <tit_r_on$cmp_le0001> created at line 952.
+    Found 10-bit adder for signal <tit_s_on$addsub0000> created at line 954.
+    Found 10-bit adder for signal <tit_s_on$addsub0001> created at line 954.
+    Found 10-bit comparator greater for signal <tit_s_on$cmp_gt0000> created at line 954.
+    Found 10-bit comparator greater for signal <tit_s_on$cmp_gt0001> created at line 954.
+    Found 10-bit comparator greatequal for signal <tit_s_on$cmp_le0000> created at line 954.
+    Found 10-bit comparator greatequal for signal <tit_s_on$cmp_le0001> created at line 954.
+    Found 10-bit adder for signal <tit_t_on$addsub0000> created at line 948.
+    Found 10-bit adder for signal <tit_t_on$addsub0001> created at line 948.
+    Found 10-bit comparator greater for signal <tit_t_on$cmp_gt0000> created at line 948.
+    Found 10-bit comparator greater for signal <tit_t_on$cmp_gt0001> created at line 948.
+    Found 10-bit comparator greatequal for signal <tit_t_on$cmp_le0000> created at line 948.
+    Found 10-bit comparator greatequal for signal <tit_t_on$cmp_le0001> created at line 948.
+    Found 10-bit adder for signal <tit_x_on$addsub0000> created at line 940.
+    Found 10-bit adder for signal <tit_x_on$addsub0001> created at line 940.
+    Found 10-bit comparator greater for signal <tit_x_on$cmp_gt0000> created at line 940.
+    Found 10-bit comparator greater for signal <tit_x_on$cmp_gt0001> created at line 940.
+    Found 10-bit comparator greatequal for signal <tit_x_on$cmp_le0000> created at line 940.
+    Found 10-bit comparator greatequal for signal <tit_x_on$cmp_le0001> created at line 940.
+    Found 10-bit adder for signal <vprekazka1_on$addsub0000> created at line 1029.
+    Found 10-bit comparator greatequal for signal <vprekazka1_on$cmp_ge0000> created at line 1029.
+    Found 10-bit comparator greatequal for signal <vprekazka1_on$cmp_le0000> created at line 1029.
+    Found 10-bit adder for signal <vprekazka2_on$addsub0000> created at line 1030.
+    Found 10-bit comparator greatequal for signal <vprekazka2_on$cmp_ge0000> created at line 1030.
+    Found 10-bit comparator greatequal for signal <vprekazka2_on$cmp_le0000> created at line 1030.
+    Found 10-bit adder for signal <vrtula1_on$addsub0000> created at line 1012.
+    Found 10-bit adder for signal <vrtula1_on$addsub0001> created at line 1012.
+    Found 10-bit adder for signal <vrtula1_on$addsub0002> created at line 1012.
+    Found 10-bit comparator greater for signal <vrtula1_on$cmp_gt0000> created at line 1012.
+    Found 10-bit comparator greater for signal <vrtula1_on$cmp_gt0001> created at line 1012.
+    Found 10-bit comparator lessequal for signal <vrtula1_on$cmp_le0000> created at line 1012.
+    Found 10-bit comparator greatequal for signal <vrtula1_on$cmp_le0001> created at line 1012.
+    Found 10-bit subtractor for signal <vrtula2_on$addsub0000> created at line 1010.
+    Found 10-bit adder for signal <vrtula2_on$addsub0001> created at line 1010.
+    Found 10-bit adder for signal <vrtula2_on$addsub0002> created at line 1010.
+    Found 10-bit comparator greater for signal <vrtula2_on$cmp_gt0000> created at line 1010.
+    Found 10-bit comparator greater for signal <vrtula2_on$cmp_gt0001> created at line 1010.
+    Found 10-bit comparator lessequal for signal <vrtula2_on$cmp_le0000> created at line 1010.
+    Found 10-bit comparator greatequal for signal <vrtula2_on$cmp_le0001> created at line 1010.
+    Summary:
+	inferred 183 D-type flip-flop(s).
+	inferred 237 Adder/Subtractor(s).
+	inferred 194 Comparator(s).
 Unit <top> synthesized.
 
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 1
- 3072x4-bit ROM                                        : 1
-# Adders/Subtractors                                   : 18
- 10-bit adder                                          : 6
- 10-bit subtractor                                     : 6
- 5-bit subtractor                                      : 6
-# Counters                                             : 2
+# ROMs                                                 : 7
+ 12288x4-bit ROM                                       : 2
+ 4096x4-bit ROM                                        : 2
+ 6656x4-bit ROM                                        : 1
+ 8192x4-bit ROM                                        : 2
+# Adders/Subtractors                                   : 250
+ 10-bit adder                                          : 102
+ 10-bit addsub                                         : 7
+ 10-bit subtractor                                     : 2
+ 12-bit adder                                          : 1
+ 14-bit adder                                          : 19
+ 14-bit subtractor                                     : 4
+ 18-bit adder                                          : 1
+ 19-bit adder                                          : 2
+ 2-bit adder                                           : 1
+ 20-bit adder                                          : 2
+ 22-bit adder                                          : 1
+ 23-bit adder                                          : 1
+ 24-bit adder                                          : 1
+ 4-bit adder                                           : 8
+ 4-bit subtractor                                      : 46
+ 42-bit adder                                          : 2
+ 5-bit adder                                           : 8
+ 5-bit subtractor                                      : 30
+ 6-bit subtractor                                      : 10
+ 7-bit subtractor                                      : 2
+# Counters                                             : 8
  10-bit up counter                                     : 2
-# Registers                                            : 6
- 1-bit register                                        : 4
- 15-bit register                                       : 1
+ 2-bit up counter                                      : 2
+ 31-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 2
+# Registers                                            : 57
+ 1-bit register                                        : 9
+ 10-bit register                                       : 15
+ 12-bit register                                       : 2
+ 14-bit register                                       : 1
+ 16-bit register                                       : 1
+ 18-bit register                                       : 1
+ 19-bit register                                       : 2
+ 2-bit register                                        : 2
+ 20-bit register                                       : 2
+ 22-bit register                                       : 1
+ 23-bit register                                       : 1
+ 24-bit register                                       : 1
  3-bit register                                        : 1
-# Comparators                                          : 18
- 10-bit comparator greatequal                          : 14
+ 4-bit register                                        : 18
+# Comparators                                          : 211
+ 10-bit comparator greatequal                          : 68
+ 10-bit comparator greater                             : 70
  10-bit comparator less                                : 2
- 10-bit comparator lessequal                           : 2
+ 10-bit comparator lessequal                           : 35
+ 10-bit comparator not equal                           : 2
+ 14-bit comparator greatequal                          : 2
+ 14-bit comparator greater                             : 8
+ 14-bit comparator lessequal                           : 10
+ 2-bit comparator less                                 : 2
+ 31-bit comparator greater                             : 1
+ 31-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 5
+ 4-bit comparator less                                 : 1
+ 42-bit comparator greatequal                          : 1
+ 42-bit comparator greater                             : 1
+ 5-bit comparator less                                 : 2
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
 
 =========================================================================
 
@@ -252,60 +1164,254 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:2677 - Node <addr_12> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <addr_13> of sequential type is unconnected in block <top>.
-WARNING:Xst:2677 - Node <addr_14> of sequential type is unconnected in block <top>.
-WARNING:Xst:2404 -  FFs/Latches <addr<14:12>> (without init value) have a constant value of 0 in block <top>.
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <debouncer_but/present_state/FSM> on signal <present_state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 000
+ s1    | 001
+ s2    | 010
+ s3    | 011
+ s4    | 100
+ s5    | 101
+-------------------
+WARNING:Xst:1293 - FF/Latch <Seed_change_enable_Q_0> has a constant value of 0 in block <rand_generator>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_y_reg_3> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_y_reg_4> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_y_reg_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_y_reg_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_y_reg_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_y_reg_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_y_reg_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_x_reg_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_x_reg_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_x_reg_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_x_reg_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Q_klop_stovky_3> of sequential type is unconnected in block <skore_dekoder>.
 
-Synthesizing (advanced) Unit <top>.
-INFO:Xst:3023 - HDL ADVISOR - Characteristics of the register <rgb_out_reg> prevent it from being combined with the ROM <database_1/Mrom_data_rom0000> for implementation as read-only block RAM.
-Unit <top> synthesized (advanced).
+Synthesizing (advanced) Unit <rom_1>.
+INFO:Xst:3044 - The ROM <Mrom_data_a_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <data_a>.
+INFO:Xst:3044 - The ROM <Mrom_data_b_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <data_b>.
+INFO:Xst:3225 - The RAM <Mrom_data_a_rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8192-word x 4-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <address_a>     |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <data_a>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3225 - The RAM <Mrom_data_b_rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8192-word x 4-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <address_b>     |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <data_b>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <rom_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <rom_2>.
+INFO:Xst:3045 - The ROM description <Mrom_data_a_rom0000> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <Mrom_data_b_rom0000> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+Unit <rom_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <rom_3>.
+INFO:Xst:3044 - The ROM <Mrom_data_a_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <data_a>.
+INFO:Xst:3044 - The ROM <Mrom_data_b_rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <data_b>.
+INFO:Xst:3225 - The RAM <Mrom_data_a_rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 12288-word x 4-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <address_a>     |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <data_a>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3225 - The RAM <Mrom_data_b_rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 12288-word x 4-bit                  |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <address_b>     |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to signal <data_b>        |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <rom_3> synthesized (advanced).
+
+Synthesizing (advanced) Unit <rom_4>.
+INFO:Xst:3045 - The ROM description <Mrom_data_rom0000> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+Unit <rom_4> synthesized (advanced).
+WARNING:Xst:2677 - Node <Q_klop_tisice_3> of sequential type is unconnected in block <BIN_TO_BCD_12BIT>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# ROMs                                                 : 1
- 3072x4-bit ROM                                        : 1
-# Adders/Subtractors                                   : 18
- 10-bit adder                                          : 6
- 10-bit subtractor                                     : 6
- 5-bit subtractor                                      : 6
-# Counters                                             : 2
+# FSMs                                                 : 1
+# RAMs                                                 : 4
+ 12288x4-bit single-port block RAM                     : 2
+ 8192x4-bit single-port block RAM                      : 2
+# ROMs                                                 : 3
+ 4096x4-bit ROM                                        : 2
+ 6656x4-bit ROM                                        : 1
+# Adders/Subtractors                                   : 250
+ 10-bit adder                                          : 102
+ 10-bit addsub                                         : 7
+ 10-bit subtractor                                     : 2
+ 12-bit adder                                          : 1
+ 14-bit adder                                          : 19
+ 14-bit subtractor                                     : 4
+ 18-bit adder                                          : 1
+ 19-bit adder                                          : 2
+ 2-bit adder                                           : 1
+ 20-bit adder                                          : 2
+ 22-bit adder                                          : 1
+ 23-bit adder                                          : 1
+ 24-bit adder                                          : 1
+ 4-bit adder                                           : 8
+ 4-bit subtractor                                      : 46
+ 42-bit adder                                          : 2
+ 5-bit adder                                           : 8
+ 5-bit subtractor                                      : 30
+ 6-bit subtractor                                      : 10
+ 7-bit subtractor                                      : 2
+# Counters                                             : 8
  10-bit up counter                                     : 2
-# Registers                                            : 19
- Flip-Flops                                            : 19
-# Comparators                                          : 18
- 10-bit comparator greatequal                          : 14
+ 2-bit up counter                                      : 2
+ 31-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 2
+# Registers                                            : 438
+ Flip-Flops                                            : 438
+# Comparators                                          : 211
+ 10-bit comparator greatequal                          : 68
+ 10-bit comparator greater                             : 70
  10-bit comparator less                                : 2
- 10-bit comparator lessequal                           : 2
+ 10-bit comparator lessequal                           : 35
+ 10-bit comparator not equal                           : 2
+ 14-bit comparator greatequal                          : 2
+ 14-bit comparator greater                             : 8
+ 14-bit comparator lessequal                           : 10
+ 2-bit comparator less                                 : 2
+ 31-bit comparator greater                             : 1
+ 31-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 5
+ 4-bit comparator less                                 : 1
+ 42-bit comparator greatequal                          : 1
+ 42-bit comparator greater                             : 1
+ 5-bit comparator less                                 : 2
+# Xors                                                 : 3
+ 1-bit xor2                                            : 3
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1293 - FF/Latch <Seed_change_enable_Q_0> has a constant value of 0 in block <random>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <killer_y_reg_3> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_y_reg_4> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_y_reg_5> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_y_reg_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_y_reg_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_y_reg_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_y_reg_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_x_reg_6> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_x_reg_7> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_x_reg_8> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <killer_x_reg_9> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <top> ...
+WARNING:Xst:1293 - FF/Latch <counter_kl/count_q_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <counter_kl/count_q_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <counter_kl/count_q_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <counter_kl/count_q_1> has a constant value of 0 in block <top>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <vga_sync> ...
 
+Optimizing unit <universal_divider_1> ...
+
+Optimizing unit <universal_divider_2> ...
+
+Optimizing unit <universal_divider_3> ...
+
+Optimizing unit <universal_divider_4> ...
+
+Optimizing unit <universal_divider_5> ...
+
+Optimizing unit <universal_divider_6> ...
+
+Optimizing unit <universal_divider_7> ...
+
+Optimizing unit <universal_divider_8> ...
+
+Optimizing unit <universal_divider_9> ...
+
+Optimizing unit <random> ...
+
+Optimizing unit <BIN_TO_BCD_12BIT> ...
+
+Optimizing unit <rom_2> ...
+WARNING:Xst:2677 - Node <skore_dekoder/BCD_Tisice_3> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <skore_dekoder/BCD_Tisice_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <skore_dekoder/BCD_Tisice_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <skore_dekoder/BCD_Tisice_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <skore_dekoder/Q_klop_tisice_2> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <skore_dekoder/Q_klop_tisice_1> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <skore_dekoder/Q_klop_tisice_0> of sequential type is unconnected in block <top>.
+WARNING:Xst:2677 - Node <skore_dekoder/Q_klop_stovky_3> of sequential type is unconnected in block <top>.
+
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 9.
-FlipFlop addr_0 has been replicated 2 time(s)
-FlipFlop addr_1 has been replicated 1 time(s)
-FlipFlop addr_2 has been replicated 1 time(s)
-FlipFlop addr_3 has been replicated 1 time(s)
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 117.
+Optimizing block <top> to meet ratio 100 (+ 5) of 1920 slices :
+Area constraint is met for block <top>, final ratio is 104.
 
 Final Macro Processing ...
+
+Processing Unit <top> :
+	Found 2-bit shift register for signal <rand_generator/Q_klop_14>.
+	Found 3-bit shift register for signal <rand_generator/Q_klop_7>.
+	Found 4-bit shift register for signal <rand_generator/Q_klop_0>.
+Unit <top> processed.
 
 =========================================================================
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 44
- Flip-Flops                                            : 44
+# Registers                                            : 480
+ Flip-Flops                                            : 480
+# Shift Registers                                      : 3
+ 2-bit shift register                                  : 1
+ 3-bit shift register                                  : 1
+ 4-bit shift register                                  : 1
 
 =========================================================================
 
@@ -331,37 +1437,47 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 6
+# IOs                              : 14
 
 Cell Usage :
-# BELS                             : 410
-#      GND                         : 1
-#      INV                         : 2
-#      LUT1                        : 18
-#      LUT2                        : 10
-#      LUT2_D                      : 4
-#      LUT2_L                      : 2
-#      LUT3                        : 83
-#      LUT3_D                      : 1
-#      LUT3_L                      : 6
-#      LUT4                        : 152
-#      LUT4_D                      : 11
-#      LUT4_L                      : 10
-#      MUXCY                       : 18
-#      MUXF5                       : 55
-#      MUXF6                       : 14
-#      MUXF7                       : 2
+# BELS                             : 5566
+#      GND                         : 13
+#      INV                         : 38
+#      LUT1                        : 248
+#      LUT2                        : 549
+#      LUT2_D                      : 32
+#      LUT2_L                      : 13
+#      LUT3                        : 821
+#      LUT3_D                      : 53
+#      LUT3_L                      : 34
+#      LUT4                        : 1707
+#      LUT4_D                      : 136
+#      LUT4_L                      : 119
+#      MULT_AND                    : 2
+#      MUXCY                       : 859
+#      MUXF5                       : 477
+#      MUXF6                       : 79
+#      MUXF7                       : 15
+#      MUXF8                       : 2
 #      VCC                         : 1
-#      XORCY                       : 20
-# FlipFlops/Latches                : 44
-#      FDE                         : 17
-#      FDR                         : 5
-#      FDRE                        : 20
-#      FDRS                        : 2
+#      XORCY                       : 368
+# FlipFlops/Latches                : 483
+#      FD                          : 18
+#      FDCE                        : 17
+#      FDE                         : 38
+#      FDR                         : 190
+#      FDRE                        : 163
+#      FDS                         : 2
+#      FDSE                        : 55
+# RAMS                             : 12
+#      RAMB16                      : 12
+# Shift Registers                  : 3
+#      SRL16                       : 3
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 5
-#      OBUF                        : 5
+# IO Buffers                       : 13
+#      IBUF                        : 2
+#      OBUF                        : 11
 =========================================================================
 
 Device utilization summary:
@@ -369,12 +1485,17 @@ Device utilization summary:
 
 Selected Device : 3s200ft256-5 
 
- Number of Slices:                      157  out of   1920     8%  
- Number of Slice Flip Flops:             44  out of   3840     1%  
- Number of 4 input LUTs:                299  out of   3840     7%  
- Number of IOs:                           6
- Number of bonded IOBs:                   6  out of    173     3%  
+ Number of Slices:                     1968  out of   1920   102% (*) 
+ Number of Slice Flip Flops:            483  out of   3840    12%  
+ Number of 4 input LUTs:               3753  out of   3840    97%  
+    Number used as logic:              3750
+    Number used as Shift registers:       3
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    173     8%  
+ Number of BRAMs:                        12  out of     12   100%  
  Number of GCLKs:                         1  out of      8    12%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
 
 ---------------------------
 Partition Resource Summary:
@@ -397,20 +1518,25 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 44    |
+clk                                | BUFGP                  | 498   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
-No asynchronous control signals found in this design
+------------------------------------+---------------------------------+-------+
+Control Signal                      | Buffer(FF name)                 | Load  |
+------------------------------------+---------------------------------+-------+
+module_reset_reg(module_reset_reg:Q)| NONE(counter_dr/count_q_0)      | 12    |
+N0(XST_GND:G)                       | NONE(counter_gam_over/count_q_0)| 5     |
+------------------------------------+---------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -5
 
-   Minimum period: 9.949ns (Maximum Frequency: 100.508MHz)
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: 6.216ns
+   Minimum period: 27.878ns (Maximum Frequency: 35.870MHz)
+   Minimum input arrival time before clock: 6.584ns
+   Maximum output required time after clock: 19.916ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -419,64 +1545,106 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 9.949ns (frequency: 100.508MHz)
-  Total number of paths / destination ports: 2552 / 108
+  Clock period: 27.878ns (frequency: 35.870MHz)
+  Total number of paths / destination ports: 34005213 / 1317
 -------------------------------------------------------------------------
-Delay:               9.949ns (Levels of Logic = 9)
-  Source:            addr_1 (FF)
-  Destination:       rgb_out_reg_0 (FF)
+Delay:               27.878ns (Levels of Logic = 20)
+  Source:            game_reg_0 (FF)
+  Destination:       database_4/data_1 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: addr_1 to rgb_out_reg_0
+  Data Path: game_reg_0 to database_4/data_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDE:C->Q             98   0.626   2.191  addr_1 (addr_1)
-     LUT4:I0->O            1   0.479   0.000  addr<4>8_F (N212)
-     MUXF5:I0->O           2   0.314   0.915  addr<4>8 (addr<4>_mmx_out6)
-     LUT3:I1->O            1   0.479   0.000  database_1/Mrom_data_rom0000481_174 (database_1/Mrom_data_rom0000481_174)
-     MUXF5:I0->O           1   0.314   0.000  database_1/Mrom_data_rom0000481_15_f5_3 (database_1/Mrom_data_rom0000481_15_f54)
-     MUXF6:I0->O           1   0.298   0.851  database_1/Mrom_data_rom0000481_13_f6_0 (database_1/Mrom_data_rom0000481_13_f61)
-     LUT3:I1->O            1   0.479   0.851  addr<8>1 (addr<8>1)
-     LUT3:I1->O            1   0.479   0.000  db_data<0>11_SW0_F (N228)
-     MUXF5:I0->O           1   0.314   0.704  db_data<0>11_SW0 (N188)
-     LUT4:I3->O            1   0.479   0.000  db_data<0>11 (db_data<0>11)
-     FDRS:D                    0.176          rgb_out_reg_0
+     FDSE:C->Q            32   0.626   1.745  game_reg_0 (game_reg_0)
+     LUT2_D:I1->O         11   0.479   1.031  technika_on_and000011 (N31)
+     LUT4:I2->O            2   0.479   0.768  press_e_on_and0004332 (press_e_on_and0004332)
+     LUT4_D:I3->O         12   0.479   0.973  press_e_on_and0004337 (N474)
+     LUT4_D:I3->O          5   0.479   0.953  let_r_on_and0000 (let_r_on)
+     LUT2:I1->O            1   0.479   0.704  addr_rom4<1>0 (addr_rom4<1>0)
+     LUT4_L:I3->LO         1   0.479   0.123  addr_rom4<1>13 (addr_rom4<1>13)
+     LUT4:I3->O            1   0.479   0.704  addr_rom4<1>33 (addr_rom4<1>33)
+     LUT4:I3->O            1   0.479   0.704  addr_rom4<1>69 (addr_rom4<1>69)
+     LUT4_L:I3->LO         1   0.479   0.123  addr_rom4<1>97 (addr_rom4<1>97)
+     LUT4:I3->O          317   0.479   3.258  addr_rom4<1>233 (addr_rom4<1>)
+     LUT3:I0->O           24   0.479   1.550  addr_rom4<5>13412 (database_4/Mrom_data_rom00002361_inv)
+     LUT4:I3->O            2   0.479   0.804  addr_rom4<4>_mmx_out211_inv1 (addr_rom4<4>_mmx_out211_inv)
+     LUT3_D:I2->O          3   0.479   0.794  addr_rom4<5>_mmx_out23 (addr_rom4<5>_mmx_out2)
+     LUT4:I3->O            2   0.479   0.804  addr_rom4<6>8170 (addr_rom4<6>9)
+     LUT3:I2->O            1   0.479   0.000  database_4/Mrom_data_rom00001141_141 (database_4/Mrom_data_rom00001141_141)
+     MUXF5:I0->O           1   0.314   0.704  database_4/Mrom_data_rom00001141_12_f5_0 (database_4/Mrom_data_rom00001141_12_f51)
+     LUT4:I3->O            1   0.479   0.000  database_4/Mrom_data_rom00001141_81 (database_4/Mrom_data_rom00001141_81)
+     MUXF5:I1->O           1   0.314   0.851  database_4/Mrom_data_rom00001141_7_f5 (database_4/Mrom_data_rom00001141_7_f5)
+     LUT3:I1->O            1   0.479   0.000  database_4/Mrom_data_rom00001141_4 (database_4/Mrom_data_rom00001141_4)
+     MUXF5:I0->O           1   0.314   0.681  database_4/Mrom_data_rom00001141_2_f5 (N241)
+     FDR:R                     0.892          database_4/data_0
     ----------------------------------------
-    Total                      9.949ns (4.437ns logic, 5.512ns route)
-                                       (44.6% logic, 55.4% route)
+    Total                     27.878ns (10.603ns logic, 17.275ns route)
+                                       (38.0% logic, 62.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 165 / 162
+-------------------------------------------------------------------------
+Offset:              6.584ns (Levels of Logic = 4)
+  Source:            reset (PAD)
+  Destination:       random1_reg_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to random1_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   0.715   1.078  reset_IBUF (reset_IBUF)
+     LUT3:I0->O            4   0.479   1.074  random1_reg_not0001211 (module_reset_reg_not0001)
+     LUT4:I0->O            1   0.479   0.976  random1_reg_not000132 (random1_reg_not000132)
+     LUT4:I0->O            4   0.479   0.779  random1_reg_not000170 (random1_reg_not0001)
+     FDE:CE                    0.524          random1_reg_0
+    ----------------------------------------
+    Total                      6.584ns (2.676ns logic, 3.908ns route)
+                                       (40.6% logic, 59.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 5 / 5
+  Total number of paths / destination ports: 5682 / 11
 -------------------------------------------------------------------------
-Offset:              6.216ns (Levels of Logic = 1)
-  Source:            vga_sync_1/v_sync_reg (FF)
-  Destination:       vsync (PAD)
+Offset:              19.916ns (Levels of Logic = 10)
+  Source:            vga_sync_1/x_counter_reg_8 (FF)
+  Destination:       ledka2 (PAD)
   Source Clock:      clk rising
 
-  Data Path: vga_sync_1/v_sync_reg to vsync
+  Data Path: vga_sync_1/x_counter_reg_8 to ledka2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              1   0.626   0.681  vga_sync_1/v_sync_reg (vga_sync_1/v_sync_reg)
-     OBUF:I->O                 4.909          vsync_OBUF (vsync)
+     FDRE:C->Q            57   0.626   1.867  vga_sync_1/x_counter_reg_8 (vga_sync_1/x_counter_reg_8)
+     LUT2:I1->O            2   0.479   1.040  dratek1_on_cmp_le0001211 (N49)
+     LUT4:I0->O            1   0.479   0.704  dratek1_on_and0002129 (dratek1_on_and0002129)
+     LUT4:I3->O            1   0.479   0.976  dratek1_on_and0002148_SW0 (N753)
+     LUT3:I0->O            1   0.479   0.976  dratek1_on_and0002148 (dratek1_on_and0002148)
+     LUT4:I0->O            1   0.479   0.976  dratek1_on_and0002171 (dratek1_on_and0002171)
+     LUT4:I0->O           15   0.479   1.305  dratek1_on_and0002641 (dratek1_on)
+     LUT4:I0->O            1   0.479   0.740  crash_and000212 (crash_and000212)
+     LUT4:I2->O            1   0.479   0.704  crash_and000232 (crash_and000232)
+     LUT4:I3->O            5   0.479   0.783  crash_and000271 (ledka2_OBUF)
+     OBUF:I->O                 4.909          ledka2_OBUF (ledka2)
     ----------------------------------------
-    Total                      6.216ns (5.535ns logic, 0.681ns route)
-                                       (89.0% logic, 11.0% route)
+    Total                     19.916ns (9.846ns logic, 10.070ns route)
+                                       (49.4% logic, 50.6% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.52 secs
+Total REAL time to Xst completion: 109.00 secs
+Total CPU time to Xst completion: 109.30 secs
  
 --> 
 
-Total memory usage is 247008 kilobytes
+Total memory usage is 413720 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   17 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :  133 (   0 filtered)
+Number of infos    :   18 (   0 filtered)
 

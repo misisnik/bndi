@@ -9,35 +9,37 @@ Target Device  : xc3s200
 Target Package : ft256
 Target Speed   : -5
 Mapper Version : spartan3 -- $Revision: 1.55 $
-Mapped Date    : Thu Nov 12 21:16:42 2015
+Mapped Date    : Sat Jan 30 13:42:32 2016
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    0
+Number of warnings:   35
 Logic Utilization:
-  Number of Slice Flip Flops:            44 out of   3,840    1%
-  Number of 4 input LUTs:               282 out of   3,840    7%
+  Number of Slice Flip Flops:           483 out of   3,840   12%
+  Number of 4 input LUTs:             3,500 out of   3,840   91%
 Logic Distribution:
-  Number of occupied Slices:            166 out of   1,920    8%
-    Number of Slices containing only related logic:     166 out of     166 100%
-    Number of Slices containing unrelated logic:          0 out of     166   0%
+  Number of occupied Slices:          1,918 out of   1,920   99%
+    Number of Slices containing only related logic:   1,918 out of   1,918 100%
+    Number of Slices containing unrelated logic:          0 out of   1,918   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         300 out of   3,840    7%
-    Number used as logic:               282
-    Number used as a route-thru:         18
+  Total Number of 4 input LUTs:       3,787 out of   3,840   98%
+    Number used as logic:             3,497
+    Number used as a route-thru:        287
+    Number used as Shift registers:       3
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                  6 out of     173    3%
+  Number of bonded IOBs:                 14 out of     173    8%
+  Number of RAMB16s:                     12 out of      12  100%
   Number of BUFGMUXs:                     1 out of       8   12%
 
-Average Fanout of Non-Clock Nets:                4.25
+Average Fanout of Non-Clock Nets:                4.14
 
-Peak Memory Usage:  236 MB
-Total REAL time to MAP completion:  1 secs 
-Total CPU time to MAP completion:   1 secs 
+Peak Memory Usage:  269 MB
+Total REAL time to MAP completion:  7 secs 
+Total CPU time to MAP completion:   6 secs 
 
 NOTES:
 
@@ -78,6 +80,145 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_22
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_21_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_15
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_14_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_183
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_17_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_19
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_18_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_212
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_20_f5_0.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_213
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_20_f5_1.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_214
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_20_f5_2.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_225
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_21_f5_1.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_2210
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_21_f5_3.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_234
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_22_f5_0.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_152
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_14_f5_1.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_161
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_15_f5_0.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_176
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_16_f5_1.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_184
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_17_f5_0.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_185
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_17_f5_1.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_1813
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_17_f5_5.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_191
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_18_f5_0.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_1910
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_18_f5_4.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_1912
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_18_f5_5.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_1913
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_18_f5_6.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_203
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_19_f5_0.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_204
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_19_f5_1.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_206
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_19_f5_3.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_4/Mrom_data_rom00001141_207
+   failed to merge with F5 multiplexer database_4/Mrom_data_rom00002291_19_f5_4.
+    There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_2/Mrom_data_a_rom00001431_132
+   failed to merge with F5 multiplexer
+   database_2/Mrom_data_a_rom0000721_12_f5_1.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator database_2/Mrom_data_a_rom00001431_143
+   failed to merge with F5 multiplexer
+   database_2/Mrom_data_a_rom0000721_13_f5_0.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator database_2/Mrom_data_a_rom00001431_177
+   failed to merge with F5 multiplexer
+   database_2/Mrom_data_a_rom0000721_16_f5_3.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator database_2/Mrom_data_a_rom00001431_189
+   failed to merge with F5 multiplexer
+   database_2/Mrom_data_a_rom0000721_17_f5_3.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator
+   database_2/Mrom_data_a_rom00001431_1810 failed to merge with F5 multiplexer
+   database_2/Mrom_data_a_rom0000721_17_f5_4.  There is a conflict for the
+   FXMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator database_2/Mrom_data_a_rom00001431_212
+   failed to merge with F5 multiplexer
+   database_2/Mrom_data_a_rom0000721_19_f5_0.  There is a conflict for the
+   GYMUX.  The design will exhibit suboptimal timing.
+WARNING:Pack:266 - The function generator database_2/Mrom_data_a_rom00001431_181
+   failed to merge with F5 multiplexer database_2/Mrom_data_a_rom0000721_17_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_2/Mrom_data_a_rom00001431_192
+   failed to merge with F5 multiplexer database_2/Mrom_data_a_rom0000721_18_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_2/Mrom_data_a_rom00001431_201
+   failed to merge with F5 multiplexer database_2/Mrom_data_a_rom0000721_19_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_2/Mrom_data_b_rom00001431_12
+   failed to merge with F5 multiplexer database_2/Mrom_data_b_rom0000721_11_f5. 
+   There is a conflict for the FXMUX.  The design will exhibit suboptimal
+   timing.
+WARNING:Pack:266 - The function generator database_2/address_a<4>881 failed to
+   merge with F5 multiplexer database_2/Mrom_data_a_rom00002671_14_f5.  There is
+   a conflict for the GYMUX.  The design will exhibit suboptimal timing.
 
 Section 3 - Informational
 -------------------------
@@ -88,7 +229,7 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   2 block(s) optimized away
+   5 block(s) optimized away
 
 Section 5 - Removed Logic
 -------------------------
@@ -108,11 +249,19 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| but                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | clk                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| game_uk<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| game_uk<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | hsync                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ledka                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| ledka2                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| reset                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | rgb<0>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | rgb<1>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | rgb<2>                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| skor<0>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| skor<1>                            | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | vsync                              | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
 

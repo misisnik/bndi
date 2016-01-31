@@ -1,0 +1,54 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Michal/Desktop/Swing Copters/graphic/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Michal/Desktop/Swing Copters/graphic/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" in Library work.
+ERROR:HDLParsers:3010 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 15. Entity counter does not exist.
+ERROR:HDLParsers:3312 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 16. Undefined symbol 'std_logic_vector'.
+ERROR:HDLParsers:1209 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 16. std_logic_vector: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 16. Undefined symbol 'n'.
+ERROR:HDLParsers:1209 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 16. n: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 19. Undefined symbol 'enable_up'.
+ERROR:HDLParsers:1209 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 19. enable_up: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 19. Undefined symbol 'rst'.
+ERROR:HDLParsers:1209 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 19. rst: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 19. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 19. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 19. Undefined symbol 'wanted'.
+ERROR:HDLParsers:1209 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 19. wanted: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 22. Undefined symbol 'count_reg'.
+ERROR:HDLParsers:3312 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 23. Undefined symbol 'rising_edge'.
+ERROR:HDLParsers:1209 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 23. rising_edge: Undefined symbol (last report in this block)
+ERROR:HDLParsers:1209 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 25. count_reg: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 19. No sensitivity list and no wait in the process
+ERROR:HDLParsers:3312 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 34. Undefined symbol 'result'.
+ERROR:HDLParsers:3312 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 34. Undefined symbol 'count_reg'.
+ERROR:HDLParsers:1209 - "C:/Users/Michal/Desktop/Swing Copters/counter_universal/counter_g.vhd" Line 34. count_reg: Undefined symbol (last report in this block)
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> 
+
+Total memory usage is 213628 kilobytes
+
+Number of errors   :   20 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

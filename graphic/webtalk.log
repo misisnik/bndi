@@ -3,14 +3,14 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 Project Information
 --------------------
-ProjectID=EBB183094B5F49FB8601D11219C977F7
-ProjectIteration=2
+ProjectID=923180c15e9b420fb7755c9d8194a24b
+ProjectIteration=1
 
 WebTalk Summary
 ----------------
-INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
+INFO:WebTalk:2 - WebTalk is enabled.
 
 INFO:WebTalk:8 - WebTalk Install setting is ON.
 INFO:WebTalk:6 - WebTalk User setting is ON.
 
-INFO:WebTalk:4 - C:/Users/Morrisiak/Desktop/Swing Copters/graphic/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2015-11-12T21:17:10.  For additional details about this file, please refer to the WebTalk help file at E:/Xilinx/14.6/ISE_DS/ISE/data/reports/webtalk_introduction.html
+INFO:WebTalk:4 - C:/Users/Sladecek/Desktop/Swing Copters/graphic/usage_statistics_webtalk.html WebTalk report has been successfully sent to Xilinx on 2016-01-30T14:43:51.  For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/14.6/ISE_DS/ISE/data/reports/webtalk_introduction.html
